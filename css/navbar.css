@@ -1,0 +1,94 @@
+#navbar{
+
+background:rgba(0, 0, 0, 0.91);
+
+border-top:2px solid black;
+
+border-bottom:2px solid black;
+
+}
+
+
+
+#navbar  > ul{
+	
+display: flex;
+align-items: center;
+justify-content: center;
+list-style:none;
+}
+
+
+
+#navbar > ul > li {
+
+float:left;
+
+}
+
+
+
+#navbar > ul > li:hover{
+
+	background:url("/images/menu/hover.webp");
+
+}
+
+
+
+#navbar > ul > li:hover > a{
+
+	color:#e4e4e4;
+
+}
+
+
+
+
+
+#navbar > ul > li.active{
+
+	background:url("/images/menu/active.webp");
+
+}
+
+
+
+#navbar > ul > li.active  > a{
+
+color:black;
+
+}
+
+
+
+#navbar > ul > li > a{
+
+    display:block;
+
+	text-decoration:none;
+
+    padding: 21px 40px;
+
+	font-family: 'Alegreya SC', serif;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+	color:#cacaca;
+
+}
+
+.facebook:hover {
+	background: none !important;
+}
+
+.facebook > a {
+	padding: 0 !important;
+	margin-left: 50px;
+}
+
+.facebook > a > img {
+	height: 44px;
+}
