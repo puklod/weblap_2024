@@ -1,3 +1,28 @@
-html{
-    background: black;
+@font-face {
+    font-family: redressed;
+    src: url(/font/redressed.ttf);
+}
+
+html {
+    font-family:'Raleway', sans-serif;
+}
+
+body {
+    margin:0;
+    padding:0;
+    min-width: 300px;
+}
+
+#logo {
+    text-align: center;
+}
+
+#logo > img {
+    height: 20vw;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
