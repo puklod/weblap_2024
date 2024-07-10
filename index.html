@@ -1,22 +1,119 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="/css/styles.css" type="text/css">
         <script src="https://kit.fontawesome.com/8a2925c7fe.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <div id="logo">
-                <img src="/images/logo.webp">
-        </div>
         <div id="before_navbar">
             <div id="navbar">
+                <div id="sitelogo">
+                    <img src="/images/page/logo.webp">
+                </div>
                 <div id="navicon">
-                    <i class="fa-solid fa-bars"></i>
+                    <div id="firstline" class="menuline"></div>
+                    <div id="secondline" class="menuline"></div>
                 </div>
                 <nav></nav>
             </div>
         </div>
-        <script src="js/menu_creator.js"></script>
-        <script src="js/menu_manipulator.js"></script>
+        <div id="body-content">
+            <div id="about-us" class='content'>
+                <div class="title">About us</div>
+                <div><img class="wide-img" src=images/page/car.webp></div>
+                <div class="text">
+                    <p>Our company’s focus is quality - with affordable prices and maximum realibility.</p>
+                    <p>We offer services throughout the year in 24 hours. You can enjoy your travel in our luxury category car from Budapest to any neighbouring countries - and back.</p>
+                    <p>Our company provides door to door services with additional stops, sightseeing detours and more - considering the desires of our clients.</p>
+                    <p>With any further questions please reach out to our <a href="/pages/foroffers.php">support desk</a>.<br>
+                    To request special offers, use the <a href="/pages/foroffers.php">dedicated contact form</a>.</p>
+                </div>
+                <div id="vehicles">
+                    <div id="gallery-container">
+                        <div id="gallery-left-arrow" class="gallery-arrow">
+                            <i class="fa-solid fa-circle-chevron-left"></i>
+                        </div>
+                        <div id="gallery-right-arrow" class="gallery-arrow">
+                            <i class="fa-solid fa-circle-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id='prices' class='content'>
+
+                <div class="title">Prices</div>
+                <p class="text">Fix prices</p>
+                
+                <div class="text">
+                    <p>One way:</p>
+                    <p>
+                    Airport -> Pest: 60€</br>
+                    Airport -> Buda: 70€
+                    </p>
+                    <p>Return:</p>
+                    <p>
+                    Airport -> Pest -> Airport: 100€</br>
+                    Airport -> Buda -> Airport: 120€
+                    </p>
+                    <p>Other prices in both directions:</p>
+                    <p>
+                    Budapest - Vienna - 320€</br>
+                    Budapest - Vienna Airport - 290€</br>
+                    Budapest - Bratislava - 300€</br>
+                    Budapest - Prague - 550€</br>
+                    Budapest - Belgrade - 400€</br>
+                    </p>
+                    <p style="text-align: center">Transfer to everywhere</p>
+                    <p class="small-font">
+                    We are open to unique requests. We can spend our whole day with you, we do countryside transfers and many more. <a href="/pages/foroffers.php">Contact us</a> to get a personalized offer.
+                    Prices given in EUR will be changed to HUF on the official central rate of the Hungarian National Bank.
+                    </p>
+                    <p>Payment methods: Cash or Credit card</p>
+                </div>
+            </div>
+            <div id="for-offers" class='content'>
+                <div class="title">For offers</div>
+                <form method="post">
+                    <h1>Message us</h1>
+                   
+                    <h3>Your name and email address*:</h3>
+                   
+                     <input name="name" placeholder="Name" type="text" /></br>
+                   
+                     <input name="email" placeholder="E-mail" type="text" /></br>
+                   
+                     <h3>Your message:</h3>
+                     
+                     <input name="subject" placeholder="Subject" type="text" /></br>
+                   
+                     <textarea name="message" rows="15"></textarea></br>
+                   
+                     <input type="submit" value="Send" />
+                   <p>* We store your data only for contact purposes.</p>
+                </form>
+                <div id="contacts">
+
+                    <div id="block-2">
+                    
+                    <p class="cim">Gold Trip Budapest</p>
+                    <p><img src="/images/support.webp"></p>
+                    
+                    <p>Costumer service:<p>
+                    
+                    Richard Kovacs
+                    <br>+36307282621</br></p>
+                    <br><a href="https://wa.me/36307282621"><img id="whatsapp-icon" src="/images/whatsapp.webp" alt="whatsapp"></a></br>
+                    <a href="https://wa.me/36307282621">WhatsApp</a>
+                    
+                    </div>
+                    
+                    </div>
+            </div>
+            <script src="js/menu_setsize.js"></script>
+            <script src="js/menu_creator.js"></script>
+            <script src="js/menu_small.js"></script>
+            <script src="js/vehicles.js"></script>
+        </div>
     </body>
 </html>
