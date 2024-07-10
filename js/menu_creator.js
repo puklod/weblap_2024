@@ -1,4 +1,4 @@
-const menuItems = ["About us", "Prices", "Vehicle", "For offers"];
+const menuItems = ["Prices", "For offers"];
 const menu = createMenu(menuItems);
 const nav = document.querySelector('nav');
 

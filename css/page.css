@@ -6,9 +6,14 @@
 html {
     background: black;
 }
+
 a {
     color: #a77d14;
     text-decoration: none;
+}
+
+header {
+    height: 20vw;
 }
 
 body {
