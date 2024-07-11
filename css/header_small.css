@@ -1,19 +1,30 @@
 #sitelogo {
     grid-column: middle;
-    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: contain;
+    width: 101px;
+    height: 130px;
+    transition-property: background-image;
+    transition-timing-function: linear;
+    transition-duration: 200ms;
 }
 
-header.opened > #topbar > #sitelogo > a.menu-closed {
-    display: none;
+header.opened > #topbar > #sitelogo {
+    background-image: url(/images/page/logo_menu_opened.webp);
 }
 
-header.closed > #topbar > #sitelogo > a.menu-opened {
-    display: none;
+header.closed > #topbar > #sitelogo {
+    background-image: url(/images/page/logo_menu_closed.webp);
 }
 
-#sitelogo > a > img {
-    height: 20vw;
+header > #topbar > #sitelogo > a {
+    display: block;
+    height: 100%;
+    width:100%;
 }
+
 
 header.small > #topbar {
     position: fixed;
@@ -40,7 +51,7 @@ header.small > #topbar > #navicon {
 }
 
 header.small > #topbar > #navicon > .menuline {
-    transition-property: transform, margin;
+    transition-property: transform, margin, color;
     transition-timing-function: linear;
     transition-duration: 200ms;
     grid-column:1;

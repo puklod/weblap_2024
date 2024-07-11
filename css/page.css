@@ -19,6 +19,7 @@ header {
 body {
     margin:0;
     padding:0;
+    color:#d0d0d0;
     min-width: 300px;
     background-image: url(/images/page/body.webp);
     background-position: center center;
@@ -45,17 +46,36 @@ body {
     padding:3%
 }
 
-.title {
+.content-title {
     text-align: center;
     color:#cd9303;
     font-size: 5vw;
 }
 
+.text-title {
+    text-align: center;
+    color:#cd9303;
+    font-size: 3vw;
+}
+
 .text {
-    color:#d0d0d0;
     font-family: 'Raleway', sans-serif;
+}
+
+.justyfied {
+    text-align: justify;
 }
 
 .wide-img {
     max-width: 100%;
+}
+
+#payment-icons {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-items: center;
+}
+
+.payment-icon {
+    max-height: 50px;
 }

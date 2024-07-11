@@ -22,6 +22,7 @@ function createURL(itemName){
     let url = document.createElement('a');
     url.setAttribute('href',HREF);
     url.innerHTML = itemName;
+    url.classList.add("anchor");
 
     return url;
 }
