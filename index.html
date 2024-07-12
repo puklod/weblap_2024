@@ -46,19 +46,28 @@
 
                 <p class="content-title"> Fix prices</p>
                
-                <div class="text pricelist">
-                    <span class="price-title">One way:</span>
-                    <span class="price-name">Airport <i class="fa-solid fa-arrow-right"></i> Pest</span><span class="price-amount">60€</span>
-                    <span class="price-name">Airport <i class="fa-solid fa-arrow-right"></i> Buda</span><span class="price-amount">70€</span>
-                    <span class="price-title">Return:</span>
-                    <span class="price-name">Airport <i class="fa-solid fa-arrow-right"></i> Pest <i class="fa-solid fa-arrow-right"></i> Airport</span><span class="price-amount">100€</span>
-                    <span class="price-name">Airport <i class="fa-solid fa-arrow-right"></i> Buda <i class="fa-solid fa-arrow-right"></i> Airport</span><span class="price-amount">120€</span>
-                    <span class="price-title">Other prices in both directions:</span>
-                    <span class="price-name">Budapest <i class="fa-solid fa-arrows-left-right"></i> Vienna</span><span class="price-amount">320€</span>
-                    <span class="price-name">Budapest <i class="fa-solid fa-arrows-left-right"></i> Vienna Airport</span><span class="price-amount">290€</span>
-                    <span class="price-name">Budapest <i class="fa-solid fa-arrows-left-right"></i> Bratislava</span><span class="price-amount">300€</span>
-                    <span class="price-name">Budapest <i class="fa-solid fa-arrows-left-right"></i> Prague</span><span class="price-amount">550€</span>
-                    <span class="price-name">Budapest <i class="fa-solid fa-arrows-left-right"></i> Belgrade</span><span class="price-amount">400€</span>
+                <div class="text grid-two-columns">
+                    <span class="price-title column-1">One way:</span>
+                    <span class="column-1">Airport <i class="fa-solid fa-arrow-right"></i> Pest</span>
+                    <span class="column-2">60€</span>
+                    <span class="column-1">Airport <i class="fa-solid fa-arrow-right"></i> Buda</span>
+                    <span class="column-2">70€</span>
+                    <span class="price-title column-1">Return:</span>
+                    <span class="column-1">Airport <i class="fa-solid fa-arrow-right"></i> Pest <i class="fa-solid fa-arrow-right"></i> Airport</span>
+                    <span class="column-2">100€</span>
+                    <span class="column-1">Airport <i class="fa-solid fa-arrow-right"></i> Buda <i class="fa-solid fa-arrow-right"></i> Airport</span>
+                    <span class="column-2">120€</span>
+                    <span class="price-title column-1">Other prices in both directions:</span>
+                    <span class="column-1">Budapest <i class="fa-solid fa-arrows-left-right"></i> Vienna</span>
+                    <span class="column-2">320€</span>
+                    <span class="column-1">Budapest <i class="fa-solid fa-arrows-left-right"></i> Vienna Airport</span>
+                    <span class="column-2">290€</span>
+                    <span class="column-1">Budapest <i class="fa-solid fa-arrows-left-right"></i> Bratislava</span>
+                    <span class="column-2">300€</span>
+                    <span class="column-1">Budapest <i class="fa-solid fa-arrows-left-right"></i> Prague</span>
+                    <span class="column-2">550€</span>
+                    <span class="column-1">Budapest <i class="fa-solid fa-arrows-left-right"></i> Belgrade</span>
+                    <span class="column-2">400€</span>
                 </div>
                     <p class="content-title">Transfer to everywhere</p>
                     <div class="justyfied">
@@ -75,41 +84,34 @@
             
             <div id="for-offers" class='content'>
                 <div class="content-title">For offers</div>
-                <form method="post">
-                    <p>Message us</p>
+                <form id="contact-form" method="post">
                    
                 <p>Your name and email address*:</p>
                    
-                     <input name="name" placeholder="Name" type="text" /></br>
+                     <input class="input text-center" name="name" placeholder="Name" type="text" /></br>
                    
-                     <input name="email" placeholder="E-mail" type="text" /></br>
+                     <input class="input text-center" name="email" placeholder="E-mail" type="text" /></br>
                    
                     <p>Your message:</p>
                      
-                     <input name="subject" placeholder="Subject" type="text" /></br>
+                     <input class="input text-center" name="subject" placeholder="Subject" type="text" /></br>
                    
-                     <textarea name="message" rows="15"></textarea></br>
+                     <textarea class="input" name="message" placeholder="Message" rows="15"></textarea></br>
                    
                      <input type="submit" value="Send" />
                    <p>* We store your data only for contact purposes.</p>
                 </form>
-                <div id="contacts">
-
-                    <div id="block-2">
-                    
-                    <p class="cim">Gold Trip Budapest</p>
-                    <p><img src="/images/support.webp"></p>
-                    
-                    <p>Costumer service:<p>
-                    
-                    <p>Richard Kovacs</p>
-                    <br>+36307282621</br></p>
-                    <br><a href="https://wa.me/36307282621"><img id="whatsapp-icon" src="/images/whatsapp.webp" alt="whatsapp"></a></br>
-                    <a href="https://wa.me/36307282621">WhatsApp</a>
-                    
+                <div id="costumer-service">
+                    <p class="content-title">Costumer service</p>                               
+                    <div class="grid-three-rows-two-columns">
+                            <span class="column-1 row-all text-center"><img src="/images/page/support-nobackground.png"></span>
+                            <span class="column-2 row-1 service-big-font">Richard Kovacs</span>
+                            <span class="column-2 row-2 service-medium-font">+36307282621</span>
+                            <span class="column-2 row-3 service-medium-font"><a href="https://wa.me/36307282621"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></span>
+                        </div>
                     </div>
                     
-                    </div>
+                </div>
             </div>
         </div>
             <script src="js/add_payment_icons.js"></script>
