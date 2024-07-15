@@ -6,8 +6,14 @@
         <script src="https://kit.fontawesome.com/8a2925c7fe.js" crossorigin="anonymous"></script>
     </head>
     <body>
+        <div id="back-to-the-top-button">
+            <i class="fa-solid fa-angle-up"></i>
+        </div>
         <header id="top">
             <div id="topbar">
+                <div class="facebook">
+                    <img src="images/icons/facebook.png" class="icon">
+                </div>
                 <div id="sitelogo"><a class="anchor" href="#about-us"></a></div>
                 <div id="navicon">
                     <div id="firstline" class="menuline"></div>
@@ -80,11 +86,10 @@
 
                         </div>
                     </div>
-                </div>
-            
+            </div>
             <div id="for-offers" class='content'>
                 <div class="content-title">For offers</div>
-                <form id="contact-form" method="post">
+                <form id="contact-form" action="php/email.php" method="post">
                    
                 <p>Your name and email address*:</p>
                    
@@ -101,25 +106,23 @@
                      <input type="submit" value="Send" />
                    <p>* We store your data only for contact purposes.</p>
                 </form>
-                <div id="costumer-service">
-                    <p class="content-title">Costumer service</p>                               
-                    <div class="grid-three-rows-two-columns">
-                            <span class="column-1 row-all text-center"><img src="/images/page/support-nobackground.png"></span>
-                            <span class="column-2 row-1 service-big-font">Richard Kovacs</span>
-                            <span class="column-2 row-2 service-medium-font">+36307282621</span>
-                            <span class="column-2 row-3 service-medium-font"><a href="https://wa.me/36307282621"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></span>
-                        </div>
-                    </div>
-                    
-                </div>
             </div>
+            <div id="costumer-service" class="content">
+                <p class="content-title">Costumer service</p>                               
+                <div class="grid-three-rows-two-columns">
+                    <span class="column-1 row-all text-center"><img src="/images/page/support-nobackground.png"></span>
+                    <span class="column-2 row-1 service-big-font">Richard Kovacs</span>
+                    <span class="column-2 row-2 service-medium-font">+36307282621</span>
+                    <span class="column-2 row-3 service-medium-font"><a href="https://wa.me/36307282621"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></span>
+                </div>
+            </div>         
         </div>
-            <script src="js/add_payment_icons.js"></script>
-            <script src="js/menu_setsize.js"></script>
-            <script src="js/menu_creator.js"></script>
-            <script src="js/menu_fix_anchor_link_offset.js"></script>
-            <script src="js/menu_small.js"></script>
-            <script src="js/vehicles.js"></script>
-        </div>
+        <script src="js/add_payment_icons.js"></script>
+        <script src="js/back_to_the_top_button.js"></script>
+        <script src="js/menu_setsize.js"></script>
+        <script src="js/menu_creator.js"></script>
+        <script src="js/menu_fix_anchor_link_offset.js"></script>
+        <script src="js/menu_small.js"></script>
+        <script src="js/vehicles.js"></script>
     </body>
 </html>

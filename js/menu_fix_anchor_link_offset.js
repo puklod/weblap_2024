@@ -14,7 +14,7 @@ const ANCHOR_HREFS = document.querySelectorAll('.anchor');
                 window.scrollTo({
                     top: offset + window.scrollY,
                     behavior: 'smooth'
-                })
+                });
             });
         }
     }
