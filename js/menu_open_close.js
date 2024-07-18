@@ -1,8 +1,14 @@
+{
 const BODY = document.querySelector('body');
 const NAVICON = document.querySelector('#navicon');
 const HEADER = document.querySelector('header');
 
 NAVICON.addEventListener('click',openMenu);
+window.addEventListener('resize', ()=> {
+        if(window.innerWidth >= 750) {
+                BODY.removeEventListener('click',closeMenu);
+        }
+})
 
 function openMenu() {
     if(window.innerWidth <= 749 && HEADER.classList.contains("closed")) {
@@ -18,4 +24,5 @@ function closeMenu() {
         HEADER.classList.add("closed");
         BODY.removeAttribute("style");
         BODY.removeEventListener('click',closeMenu);
+}
 }

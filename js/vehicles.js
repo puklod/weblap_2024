@@ -1,3 +1,4 @@
+{
 let currentImgNumber = 0;
 let isMouseOver = false;
 const gallery = {
@@ -69,4 +70,5 @@ function setBackgroundImage(imgNumber) {
 
 function generateImgFilePath(imgNumber) {
     return gallery.imgFilePath + "00" + imgNumber + gallery.imgExtension;
+}
 }

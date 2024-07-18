@@ -28,15 +28,15 @@
                     <span class="side-icon"><i class="fa-solid fa-diamond"></i></span></div></nav>
         </header>
         <div id="body-content">
-            <div id="about-us" class='content'>
+            <div id="about-us" class='content first-content'>
                 <div class="content-title">About us</div>
                 <div><img class="wide-img" src=images/page/car.webp></div>
                 <div class="text justyfied">
                     <p>Our company’s focus is quality - with affordable prices and maximum realibility.</p>
                     <p>We offer services throughout the year in 24 hours. You can enjoy your travel in our luxury category car from Budapest to any neighbouring countries - and back.</p>
                     <p>Our company provides door to door services with additional stops, sightseeing detours and more - considering the desires of our clients.</p>
-                    <p>With any further questions please reach out to our <a href="/pages/foroffers.php">support desk</a>.<br>
-                    To request special offers, use the <a href="/pages/foroffers.php">dedicated contact form</a>.</p>
+                    <p>With any further questions please reach out to our <a class="anchor" href="#costumer-service">support desk</a>.<br>
+                    To request special offers, use the <a class="anchor" href="#for-offers">dedicated contact form</a>.</p>
                 </div>
                 <div id="vehicles">
                     <div id="gallery-container">
@@ -90,30 +90,13 @@
             </div>
             <div id="for-offers" class='content'>
                 <div class="content-title">For offers</div>
-                <form id="contact-form" action="php/email.php" method="post">
-                   
-                    <p>Your name and email address*:</p>
-                       
-                         <input class="input text-center" name="name" placeholder="Name" type="text" required/></br>
-                       
-                         <input class="input text-center" name="email" placeholder="E-mail" type="email" required/></br>
-                       
-                        <p>Your message:</p>
-                         
-                         <input class="input text-center" name="subject" placeholder="Subject" type="text" required/></br>
-                       
-                         <textarea class="input" name="message" placeholder="Message" rows="15" required></textarea></br>
-                       
-                         <input type="submit" value="Send" />
-                       <p>* We store your data only for contact purposes.</p>
-                </form>
             </div>
             <div id="costumer-service" class="content">
                 <p class="content-title">Costumer service</p>                               
                 <div class="grid-three-rows-two-columns">
-                    <span class="column-1 row-all text-center">
-                        <div></div>
-                        <img src="/images/page/support_no_back.png">
+                    <span class="column-1 row-all text-center support-img-container">
+                        <div class="support-img-background"></div>
+                        <img src="/images/page/support_no_back.png" class="support-img">
                     </span>
                     <span class="column-2 row-1 service-big-font">Richard Kovacs</span>
                     <span class="column-2 row-2 service-medium-font">+36307282621</span>
@@ -127,7 +110,7 @@
         <script src="js/menu_setsize.js"></script>
         <script src="js/menu_creator.js"></script>
         <script src="js/menu_fix_anchor_link_offset.js"></script>
-        <script src="js/menu_small.js"></script>
+        <script src="js/menu_open_close.js"></script>
         <script src="js/vehicles.js"></script>
     </body>
 </html>

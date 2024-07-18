@@ -1,3 +1,4 @@
+{
 const header = document.querySelector('header');
 const body = document.querySelector('body');
 
@@ -14,7 +15,6 @@ function setMenuType() {
 }
 
 function bigMenu() {
-    body.removeEventListener('click',closeMenu);
     body.classList.add("preload");
     header.classList.remove("small");
     header.classList.remove("opened");
@@ -29,4 +29,5 @@ function smallMenu() {
     header.classList.add("small");
     header.classList.add("closed");
     setTimeout(() => body.removeAttribute("class"),50);
+}
 }

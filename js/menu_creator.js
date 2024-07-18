@@ -1,3 +1,4 @@
+{
 const menuItems = ["Prices", "For offers", "Costumer service"];
 const menu = createMenu(menuItems);
 const nav = document.querySelector('nav');
@@ -25,4 +26,5 @@ function createURL(itemName){
     url.classList.add("anchor");
 
     return url;
+}
 }

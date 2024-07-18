@@ -1,3 +1,4 @@
+{
 const PAYMENT_ICONS = {
     area: document.querySelector('#payment-icons'),
     imgFilePath: "images/payment/",
@@ -17,3 +18,4 @@ const PAYMENT_ICONS = {
         PAYMENT_ICONS.area.append(imgElement);
     }
 })()
+}

@@ -3,7 +3,6 @@ const BUTTON = document.querySelector('#back-to-the-top-button > i');
 const BODY = document.querySelector('html');
 
 (() => {
-    if(window.innerWidth <= 749) {
         BUTTON.addEventListener('click', () => {
             window.scrollTo({
                 top: 0,
@@ -12,7 +11,6 @@ const BODY = document.querySelector('html');
         })
 
         window.addEventListener('scroll',showBackToTopButton)
-    }
 })()
 
 function showBackToTopButton () {

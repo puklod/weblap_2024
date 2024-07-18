@@ -1,3 +1,4 @@
+{
 const ANCHOR_HREFS = document.querySelectorAll('.anchor');
 
 (function setCorrectPosition() {
@@ -19,3 +20,4 @@ const ANCHOR_HREFS = document.querySelectorAll('.anchor');
         }
     }
 })()
+}
