@@ -5,6 +5,14 @@
 
 html {
     background: black;
+    background-image: url(/images/page/body.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: contain;
 }
 
 a {
@@ -21,14 +29,7 @@ body {
     padding:0;
     color:#d0d0d0;
     min-width: 300px;
-    background-image: url(/images/page/body.webp);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: contain;
+    background: rgb(0 0 0 / 91%);
 }
 
 .preload *{
@@ -43,7 +44,7 @@ body {
 
 .content {
     grid-column: middle;
-    background: rgba(0, 0, 0, 0.842);
+    background: #29292966;
     padding:3%;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -86,6 +87,13 @@ body {
 
 .icon {
     max-height: 50px;
+}
+
+.grid-three-column-area {
+    display: grid;
+    grid-template-columns: 5% [left] 10% [middle] 70% [right] 10% 5%;
+    align-items: center;
+    justify-items: center;
 }
 
 .grid-two-columns {

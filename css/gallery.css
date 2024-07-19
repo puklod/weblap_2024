@@ -16,7 +16,8 @@
     transition-timing-function: ease-in-out;
     transition-delay: 60ms;
     border-style: solid;
-    border-width: 0.6vw;
+    border-width: 0.2vw;
+    border-color:#2d2d2d;
 }
 
 .gallery-arrow {

@@ -1,22 +1,22 @@
-#sitelogo {
+
+
+header > #topbar {
+    display: grid;
+    background: black;
+    grid-template-columns: 5% [left] 10% [middle] 70% [right] 10% 5%;
+    align-items: center;
+    justify-items: center;
+}
+
+header > #topbar > #sitelogo {
     grid-column: middle;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: local;
     background-size: contain;
-    width: 101px;
-    height: 130px;
-    transition-property: background-image;
-    transition-timing-function: linear;
-    transition-duration: 200ms;
-}
-
-header.opened > #topbar > #sitelogo {
-    background-image: url(/images/page/logo_menu_opened.webp);
-}
-
-header.closed > #topbar > #sitelogo {
     background-image: url(/images/page/logo_menu_closed.webp);
+    width: 100px;
+    height: 100px;
 }
 
 header > #topbar > #sitelogo > a {
@@ -25,14 +25,18 @@ header > #topbar > #sitelogo > a {
     width:100%;
 }
 
+/* HEADER SMALL */
 
-header.small > #topbar {
-    display: grid;
-    background: black;
-    grid-template-columns: 5% [left] 10% [middle] 70% [right] 10% 5%;
-    align-items: center;
-    justify-items: center;
+header.small > #topbar > #sitelogo {
+    transition-property: background-image;
+    transition-timing-function: linear;
+    transition-duration: 200ms;
 }
+
+header.small.opened > #topbar > #sitelogo {
+    background-image: url(/images/page/logo_menu_opened.webp);
+}
+
 
 header.small.opened > #topbar {
     background: #000000f2;
@@ -135,6 +139,52 @@ header.small > nav > ul > li > a {
     display: block;
     text-decoration: none;
     font-size: 5vw;
+    font-weight: bold;
+    font-family: 'Alegreya SC', serif;
+}
+
+/* HEADER BIG */
+
+header.big > nav {
+    display: grid;
+    grid-template-columns: 5% [left] 10% [middle] 70% [right] 10% 5%;
+    grid-template-rows: [top] 50% [bottom] 50%;
+    align-items: center;
+    justify-items: center;
+    background: #0000009e;
+}
+
+
+header.big > nav > #site-name {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: last;
+    font-size: 4vw;
+    width: 100%;
+    background: black;
+}
+
+header.big > nav > ul {
+    grid-column: middle;
+    width: 100%;
+    grid-row: bottom;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header.big > nav > ul > li {
+    list-style: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+header.big > nav > ul > li > a {
+    color:#b9a889;
+    display: block;
+    text-decoration: none;
+    font-size: 30px;
     font-weight: bold;
     font-family: 'Alegreya SC', serif;
 }
