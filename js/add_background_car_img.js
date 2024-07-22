@@ -8,7 +8,7 @@ window.addEventListener('scroll', () => {
     let currentScollPercentage = window.scrollY / onePercentage;
 
     if(currentScollPercentage > 15) {
-        IMG_DIV.style.opacity = 100;
+        IMG_DIV.style.opacity = 0.6;
     } else {
         IMG_DIV.style.opacity = 0;
     }

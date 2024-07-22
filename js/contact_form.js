@@ -25,12 +25,12 @@ function showMessage() {
 function createForm() {
     let form = createElement('form',{id:"contact-form", action:"php/email.php", method:"post"});
         form.append(createP("Your name and email address*:"));
-        form.append(createElement('input',{class:"input text-center", name:"name", placeholder:"Name", type:"text", required:""}));
-        form.append(createElement('input',{class:"input text-center", name:"email", placeholder:"E-mail", type:"email", required:""}));
+        form.append(createElement('input',{class:"input centered", name:"name", placeholder:"Name", type:"text", required:""}));
+        form.append(createElement('input',{class:"input centered", name:"email", placeholder:"E-mail", type:"email", required:""}));
         form.append(createP("Your message:"));
-        form.append(createElement('input',{class:"input text-center", name:"subject", placeholder:"Subject", type:"text", required:""}));
+        form.append(createElement('input',{class:"input centered", name:"subject", placeholder:"Subject", type:"text", required:""}));
         form.append(createElement('textarea',{class:"input", name:"message", placeholder:"Message", rows:"15", required:""}));
-        form.append(createElement('input',{type:"submit", value:"Send"}));
+        form.append(createElement('input',{class:"submit-button", type:"submit", value:"Send"}));
         form.append(createP("* We store your data only for contact purposes."));
     
     return form;
@@ -50,6 +50,7 @@ function createP(string) {
     let p = document.createElement('p');
 
     p.append(string);
+    p.classList.add("form-text");
 
     return p;
 }

@@ -7,9 +7,9 @@ setMenuType();
 
 
 function setMenuType() {
-    if (window.innerWidth >= 750 && !header.classList.contains("big")) {
+    if (window.innerWidth >= 769 && !header.classList.contains("big")) {
         bigMenu();
-    } else if (window.innerWidth <= 749 && !header.classList.contains("small")) {
+    } else if (window.innerWidth <= 768 && !header.classList.contains("small")) {
         smallMenu();
     }   
 }

@@ -5,13 +5,13 @@ const HEADER = document.querySelector('header');
 
 NAVICON.addEventListener('click',openMenu);
 window.addEventListener('resize', ()=> {
-        if(window.innerWidth >= 750) {
+        if(window.innerWidth >= 769) {
                 BODY.removeEventListener('click',closeMenu);
         }
 })
 
 function openMenu() {
-    if(window.innerWidth <= 749 && HEADER.classList.contains("closed")) {
+    if(window.innerWidth <= 768 && HEADER.classList.contains("closed")) {
             HEADER.classList.remove("closed");
             HEADER.classList.add("opened");
             BODY.style.overflow = "hidden";

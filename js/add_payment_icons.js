@@ -13,7 +13,7 @@ const PAYMENT_ICONS = {
         let src = PAYMENT_ICONS.imgFilePath + "00" + Number(i+1) + PAYMENT_ICONS.imgExtension; 
         imgElement = document.createElement('img');
         imgElement.setAttribute("src",src);
-        imgElement.classList.add("icon");
+        imgElement.classList.add("payment-icon");
 
         PAYMENT_ICONS.area.append(imgElement);
     }

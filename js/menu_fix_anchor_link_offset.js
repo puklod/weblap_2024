@@ -2,7 +2,7 @@
 const ANCHOR_HREFS = document.querySelectorAll('.anchor');
 
 (function setCorrectPosition() {
-    if(window.innerWidth <= 749){
+    if(window.innerWidth <= 768){
         for (const HREF of ANCHOR_HREFS) {
             HREF.addEventListener('click',(event) => {
                 event.preventDefault();

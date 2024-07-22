@@ -16,7 +16,7 @@ body {
     margin:0;
     padding:0;
     color:#d0d0d0;
-    min-width: 300px;
+    min-width: 320px;
 }
 
 .transparent-background {
@@ -67,27 +67,35 @@ header {
 }
 
 .first-content {
-    margin-top: 0;
+    margin-top: 1.5vw;
 }
 
 .content-title {
     text-align: center;
     color:#cd9303;
-    font-size: 5vw;
+    font-size: 7vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
 }
 
-.text-title {
-    text-align: center;
-    color:#cd9303;
-    font-size: 3vw;
-}
 
 .text {
     font-family: 'Raleway', sans-serif;
+    font-size: 4vw;
+    line-height: 5vw;
+}
+
+.fa-arrow-right,
+.fa-arrows-left-right {
+    font-size: 3vw;
 }
 
 .justyfied {
     text-align: justify;
+}
+
+.centered {
+    text-align: center;
 }
 
 .wide-img {
@@ -97,12 +105,12 @@ header {
 #payment-icons {
     display: flex;
     justify-items: center;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
-.icon {
-    max-height: 50px;
+.payment-icon {
+    max-height: 6vw;
 }
 
 .grid-three-column-area {
@@ -114,13 +122,14 @@ header {
 
 .grid-two-columns {
     display: grid;
-    grid-template-columns: [column-1] 50% [column-2] auto;
+    grid-template-columns: [column-1] 75% [column-2] auto;
     justify-content: center;
+    margin-bottom: 3vw;
 }
 
 .grid-three-rows-two-columns {
     display: grid;
-    grid-template-columns: [column-1] 39% [column-2] 39%;
+    grid-template-columns: [column-1] 53% [column-2] 45%;
     grid-template-rows: [row-1] 33% [row-2] 33% [row-3] 33%;
     justify-content: center;
     align-items: center;
@@ -128,10 +137,17 @@ header {
 
 .column-1 {
     grid-column: column-1;
+    padding-top: 0.5vw;
+    padding-bottom: 0.5vw;
 }
 
 .column-2 {
     grid-column: column-2;
+}
+
+.column-all {
+    grid-column-start: 1;
+    grid-column-end: last;
 }
 
 .row-1 {
@@ -151,17 +167,18 @@ header {
     grid-row-end: last;
 }
 
-.price-title {
-    padding-top: 10px;
-    padding-bottom: 10px;
+.text-title {
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+    font-size: 4.5vw;
 }
 
 .service-big-font {
-    font-size: 4vw;
+    font-size: 5vw;
 }
 
 .service-medium-font {
-    font-size: 3vw;
+    font-size: 5vw;
 }
 
 #back-to-the-top-button {
@@ -182,8 +199,8 @@ header {
     grid-row: button-row;
     visibility: hidden;
     opacity: 0;
-    width: 50px;
-    height: 50px;
+    width: 12vw;
+    height: 12vw;
     pointer-events: all;
     cursor: pointer;
     display: flex;
@@ -195,17 +212,9 @@ header {
     transition-property: visibility, opacity;
     transition-timing-function: linear;
     transition-duration: 200ms;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
-.facebook {
-    grid-column: left;
-}
-
-.facebook > img {
-    max-height: 40px;
-    border-radius: 20%;
-    display: block;
-}
 
 .support-img-container {
     display: flex;
@@ -215,24 +224,219 @@ header {
 
 .support-img {
     border-radius: 33%;
-    width: 120px;
+    width: 85px;
     z-index: 1;
 }
 
 .support-img-background {
-    width: 118px;
-    height: 91px;
+    width: 91px;
+    height: 64px;
     background: #cccccc;
     position: absolute;
     z-index: 0;
     border-radius: 27%;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 footer {
     position: relative;
     width: 100%;
-    height: 100px;
+    height: 50px;
     background: #614a216e;
 }
 
+@media (min-width: 376px) {
+    .text {
+        font-size: 3.4vw;
+    }
+
+    .text-title {
+        font-size: 4vw;
+    }
+
+    #back-to-the-top-button > i {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .support-img {
+        width: 93px;
+    }
+
+    .support-img-background {
+        margin-top: 17px;
+    }
+
+    .fa-arrow-right,
+    .fa-arrows-left-right {
+        font-size: 2.5vw;
+    }
+}
+
+@media (min-width: 510px) {
+    .text {
+        font-size: 3.1vw;
+    }
+
+    .text > p {
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+
+    .text-title {
+        font-size: 3.5vw;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+    }
+
+    #back-to-the-top-button > i {
+        width: 8vw;
+        height: 8vw;
+    }
+
+    .support-img {
+        width: 100px;
+    }
+
+    .support-img-background {
+        margin-top: 18px;
+        width: 100px;
+        height: 70px;
+    }
+
+    .fa-arrow-right,
+    .fa-arrows-left-right {
+        font-size: 2.2vw;
+    }
+
+    .column-1 {
+        padding-top: 0.4vw;
+        padding-bottom: 0.4vw;
+    }
+}
+
+@media (min-width: 580px) {
+    .text {
+        font-size: 3vw;
+    }
+
+    .content-title {
+        font-size: 6.5vw;
+    }
+
+    .fa-arrow-right,
+    .fa-arrows-left-right {
+        font-size: 2.1vw;
+    }
+
+    .service-big-font {
+        font-size: 4vw;
+    }
+
+    .service-medium-font {
+        font-size: 3.5vw;
+    }
+}
+
+@media (min-width: 670px) {
+    .text {
+        font-size: 2.9vw;
+    }
+    .text > p {
+        margin-top: 1.5vw;
+        margin-bottom: 1.5vw;
+    }
+
+    .column-1 {
+        padding-top: 0.3vw;
+        padding-bottom: 0.3vw;
+    }
+
+    #back-to-the-top-button > i {
+        width: 7vw;
+        height: 7vw;
+    }
+}
+
+@media (min-width: 770px) {
+    .text {
+        font-size: 2.3vw;
+    }
+    .text > p {
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+    }
+    .content-title {
+        font-size: 5vw;
+    }
+
+    .text-title {
+        font-size: 3vw;
+    }
+
+    .column-1 {
+        padding-top: 0.2vw;
+        padding-bottom: 0.2vw;
+    }
+
+    #back-to-the-top-button > i {
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .support-img {
+        width: 120px;
+    }
+
+    .support-img-background {
+        margin-top: 20px;
+        width: 120px;
+        height: 84px;
+    }
+
+    .service-big-font {
+        font-size: 3.5vw;
+    }
+
+    .service-medium-font {
+        font-size: 3vw;
+    }
+
+    .payment-icon {
+        max-height: 5vw;
+    }
+}
+
+@media (min-width: 920px) {
+    .text > p {
+        margin-top: 0.1vw;
+        margin-bottom: 0.1vw;
+    }
+
+    .column-1 {
+        padding-top: 0.1vw;
+        padding-bottom: 0.1vw;
+    }
+
+    #back-to-the-top-button > i {
+        width: 5vw;
+        height: 5vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    .text {
+        font-size: 1.7vw;
+    }
+
+    .text > p {
+        margin-top: 0.7vw;
+        margin-bottom: 0.7vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        line-height: 3vw;
+    }
+}
+
+@media (min-width: 1440px) {
+}

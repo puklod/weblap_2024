@@ -1,11 +1,25 @@
 .input {
-    width: 55%;
-    background-image: url("/images/page/input.png");
+    width: 80%;
+    background-image: url(/images/page/input.png);
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    border-style: none;
 }
 
 .input::placeholder {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2vw;
+    font-size: 4vw;
+}
+
+.submit-button {
+    border: none;
+    background-image: url(/images/page/input.png);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 21vw;
+    height: 6vw;
+    margin-top: 2vw;
 }
 
 .text-center {
@@ -22,4 +36,63 @@
 
 #contact-form > textarea::placeholder {
     text-align: center;
+}
+
+@media (min-width: 376px) {
+    .form-text {
+        font-size: 4vw;
+    }
+
+    .input::placeholder {
+        font-size: 3.5vw;
+    }
+
+    .submit-button {
+        font-size: 3.5vw;
+    }
+}
+
+@media (min-width: 510px) {
+    .form-text {
+        font-size: 4vw;
+    }
+
+    .input::placeholder {
+        font-size: 3vw;
+    }
+
+    .submit-button {
+        font-size: 3vw;
+    }
+}
+
+@media (min-width: 580px) {
+
+    .submit-button {
+        font-size: 2.7vw;
+    }
+}
+
+@media (min-width: 770px) {
+    .form-text {
+        font-size: 3vw;
+    }
+
+    .input::placeholder {
+        font-size: 2vw;
+    }
+
+    .submit-button {
+        font-size: 2vw;
+        width: 15vw;
+        height: 5vw;
+    }
+
+    .input {
+        width: 60%;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        margin-top: 0.5vw;
+        margin-bottom: 0.5vw;
+    }
 }
