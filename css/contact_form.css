@@ -1,0 +1,25 @@
+.input {
+    width: 55%;
+    background-image: url("/images/page/input.png");
+}
+
+.input::placeholder {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2vw;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#contact-form {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact-form > textarea::placeholder {
+    text-align: center;
+}

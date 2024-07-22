@@ -1,0 +1,213 @@
+
+
+header > #topbar {
+    display: grid;
+    background: black;
+    grid-template-columns: 5% [left] 10% [middle] 70% [right] 10% 5%;
+    align-items: center;
+    justify-items: center;
+}
+
+header > #topbar > #sitelogo {
+    grid-column: middle;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: contain;
+    background-image: url(/images/page/logo_menu_closed.webp);
+    width: 100px;
+    height: 100px;
+}
+
+header > #topbar > #sitelogo > a {
+    display: block;
+    height: 100%;
+    width:100%;
+}
+
+header > nav {
+    z-index: 1;
+}
+
+/* HEADER SMALL */
+
+header.small > #topbar > #sitelogo {
+    transition-property: background-image;
+    transition-timing-function: linear;
+    transition-duration: 200ms;
+}
+
+header.small.opened > #topbar > #sitelogo {
+    background-image: url(/images/page/logo_menu_opened.webp);
+}
+
+
+header.small.opened > #topbar {
+    background: #000000f2;
+}
+
+header.small > #topbar > #navicon {
+    grid-column: right;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    width: max-content;
+}
+
+header.small > #topbar > #navicon > .menuline {
+    transition-property: transform, margin, color;
+    transition-timing-function: linear;
+    transition-duration: 200ms;
+    grid-column:1;
+    grid-row:1;
+    background: #a77d14;
+    width: 35px;
+    height: 5px;
+}
+
+header.small.opened > #topbar > #navicon > .menuline {
+    background: #c7bcb6;
+}
+
+header.small.closed > #topbar > #navicon > #firstline {
+    margin-bottom: 10px;
+}
+
+header.small.closed > #topbar > #navicon > #secondline {
+    margin-top:10px;
+}
+
+header.small.opened > #topbar > #navicon > #firstline{
+    margin: 0;
+    transform: rotate(45deg);
+}
+
+header.small.opened > #topbar > #navicon > #secondline{
+    margin: 0;
+    transform: rotate(-45deg);
+}
+
+
+header.small > nav{
+    position: fixed;
+    background: #000000de;
+    height: 100%;
+    width: 100%;
+    transition-property: visibility, opacity;
+    transition-duration: 200ms;
+    transition-timing-function: linear;
+}
+
+
+header.small.closed > nav{
+    opacity: 0;
+    visibility: hidden;
+}
+
+header.small.opened > nav{
+    opacity: 100;
+}
+
+header.small > nav > #site-name {
+    color: #c7bcb6;
+    font-size: 41px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+header.small > nav > #site-name > .side-icon {
+    font-size: 11px;
+    padding: 13px;
+}
+
+header.small > nav > ul {
+    margin:0;
+    padding:0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+header.small > nav > ul > li {
+    list-style: none;
+    padding-top: 11px;
+}
+
+
+header.small > nav > ul > li > a {
+    color:#a77d14;
+    display: block;
+    text-decoration: none;
+    font-size: 5vw;
+    font-weight: bold;
+    font-family: 'Alegreya SC', serif;
+}
+
+/* HEADER BIG */
+
+header.big > nav {
+    display: grid;
+    grid-template-columns: 5% [left] 10% [middle] 70% [right] 10% 5%;
+    grid-template-rows: [top] 50% [bottom] 50%;
+    align-items: center;
+    justify-items: center;
+    background: #0000009e;
+}
+
+
+header.big > nav > #site-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: last;
+    font-size: 4vw;
+    width: 100%;
+    background: black;
+    color: #cd9303;
+}
+
+header.big > nav > ul {
+    grid-column: middle;
+    width: 100%;
+    grid-row: bottom;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header.big > nav > ul > li {
+    list-style: none;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+
+header.big > nav > ul > li > a {
+    color:#7f7055;
+    display: block;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Alegreya SC', serif;
+    transition-property: color;
+    transition-duration: 600ms;
+    transition-property: color;
+}
+
+header.big > nav > ul > li > a:hover {
+    color:#b9a889;
+}
+
+header.big > nav > #site-name > .side-icon {
+    font-size: 20px;
+    padding: 11px;
+}

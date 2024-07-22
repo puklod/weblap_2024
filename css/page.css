@@ -1,0 +1,238 @@
+@font-face {
+    font-family: redressed;
+    src: url(/font/redressed.ttf);
+}
+
+html {
+    background: black;
+}
+
+a {
+    color: #a77d14;
+    text-decoration: none;
+}
+
+body {
+    margin:0;
+    padding:0;
+    color:#d0d0d0;
+    min-width: 300px;
+}
+
+.transparent-background {
+    background: rgb(0 0 0 / 68%);
+}
+
+.preload *{
+    transition: 0s linear !important;
+}
+
+#background-car-img {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 0;
+    opacity: 0;
+    background-image: url(/images/page/body.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: contain;
+    transition-property: opacity;
+    transition-duration: 400ms;
+    transition-timing-function: linear;
+}
+
+header {
+    position: relative;
+}
+
+
+#body-content {
+    position: relative;
+    display: grid;
+    grid-template-columns: [left] 10% [middle] 80% [right] 10%;
+}
+
+
+.content {
+    grid-column: middle;
+    background: #61616166;
+    padding:3%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.first-content {
+    margin-top: 0;
+}
+
+.content-title {
+    text-align: center;
+    color:#cd9303;
+    font-size: 5vw;
+}
+
+.text-title {
+    text-align: center;
+    color:#cd9303;
+    font-size: 3vw;
+}
+
+.text {
+    font-family: 'Raleway', sans-serif;
+}
+
+.justyfied {
+    text-align: justify;
+}
+
+.wide-img {
+    max-width: 100%;
+}
+
+#payment-icons {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    max-height: 50px;
+}
+
+.grid-three-column-area {
+    display: grid;
+    grid-template-columns: 5% [left] 10% [middle] 70% [right] 10% 5%;
+    align-items: center;
+    justify-items: center;
+}
+
+.grid-two-columns {
+    display: grid;
+    grid-template-columns: [column-1] 50% [column-2] auto;
+    justify-content: center;
+}
+
+.grid-three-rows-two-columns {
+    display: grid;
+    grid-template-columns: [column-1] 39% [column-2] 39%;
+    grid-template-rows: [row-1] 33% [row-2] 33% [row-3] 33%;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-1 {
+    grid-column: column-1;
+}
+
+.column-2 {
+    grid-column: column-2;
+}
+
+.row-1 {
+    grid-row: row-1;
+}
+
+.row-2 {
+    grid-row: row-2;
+}
+
+.row-3 {
+    grid-row: row-3;
+}
+
+.row-all {
+    grid-row-start: 1;
+    grid-row-end: last;
+}
+
+.price-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.service-big-font {
+    font-size: 4vw;
+}
+
+.service-medium-font {
+    font-size: 3vw;
+}
+
+#back-to-the-top-button {
+    position: fixed;
+    pointer-events: none;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: [left] 87% [button] 9% [right] 4%;
+    grid-template-rows: [top] 87% [button-row] 6% [bottom] 7%;
+    justify-items: center;
+    align-items: center;
+    z-index: 1;
+}
+
+#back-to-the-top-button > i {
+    grid-column: button;
+    grid-row: button-row;
+    visibility: hidden;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    pointer-events: all;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #856002;
+    border-radius: 50%;
+    color: #473e3e;
+    transition-property: visibility, opacity;
+    transition-timing-function: linear;
+    transition-duration: 200ms;
+}
+
+.facebook {
+    grid-column: left;
+}
+
+.facebook > img {
+    max-height: 40px;
+    border-radius: 20%;
+    display: block;
+}
+
+.support-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.support-img {
+    border-radius: 33%;
+    width: 120px;
+    z-index: 1;
+}
+
+.support-img-background {
+    width: 118px;
+    height: 91px;
+    background: #cccccc;
+    position: absolute;
+    z-index: 0;
+    border-radius: 27%;
+    margin-top: 15px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: #614a216e;
+}
+
