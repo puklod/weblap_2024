@@ -16,6 +16,9 @@ function showMessage() {
     
     span.append("Thank you for contacting us!");
     div.append(span);
+    div.classList.add("form-text");
+    div.classList.add("centered");
+
     FORM_DIV.append(div);
 
     }

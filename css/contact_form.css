@@ -1,3 +1,7 @@
+.form-text {
+    font-size: 5vw;
+}
+
 .input {
     width: 80%;
     background-image: url(/images/page/input.png);
@@ -37,6 +41,7 @@
 #contact-form > textarea::placeholder {
     text-align: center;
 }
+
 
 @media (min-width: 376px) {
     .form-text {
@@ -94,5 +99,107 @@
         padding-bottom: 1vw;
         margin-top: 0.5vw;
         margin-bottom: 0.5vw;
+    }
+}
+
+@media (min-width: 1120px) {
+    .form-text {
+        font-size: 2vw;
+    }
+
+    .input::placeholder {
+        font-size: 1.5vw;
+    }
+
+    .submit-button {
+        font-size: 1.4vw;
+        width: 10vw;
+        height: 3vw;
+    }
+
+    .input {
+        width: 55%;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        margin-top: 0.5vw;
+        margin-bottom: 0.5vw;
+    }
+}
+
+@media (min-width: 1320px) {
+    .form-text {
+        font-size: 1.5vw;
+    }
+
+    .input::placeholder {
+        font-size: 1.3vw;
+    }
+
+    .submit-button {
+        font-size: 1.1vw;
+        width: 8.5vw;
+        height: 2.3vw;
+    }
+
+    .input {
+        width: 49%;
+        padding-top: 0.5vw;
+        padding-bottom: 0.5vw;
+        margin-top: 0.5vw;
+        margin-bottom: 0.5vw;
+    }
+}
+
+@media (min-width: 1560px) {
+    .form-text {
+        font-size: 1.3vw;
+        margin-top: 1vw;
+        margin-bottom:1vw;
+    }
+
+    .input::placeholder {
+        font-size: 1.1vw;
+    }
+
+    .submit-button {
+        font-size: 1.0vw;
+        width: 8.1vw;
+        height: 2vw;
+        margin-top:1.2vw;
+    }
+
+    .input {
+        width: 49%;
+        padding-top: 0.5vw;
+        padding-bottom: 0.5vw;
+        margin-top: 0.5vw;
+        margin-bottom: 0.5vw;
+    }
+}
+
+@media (min-width: 1800px) {
+    .form-text {
+        font-size: 1.2vw;
+        margin-top: 0.7vw;
+        margin-bottom: 0.7vw;
+    }
+
+    .input::placeholder {
+        font-size: 0.9vw;
+    }
+
+    .submit-button {
+        font-size: 0.8vw;
+        width: 7.5vw;
+        height: 1.6vw;
+        margin-top: 0.8vw;
+    }
+
+    .input {
+        width: 45%;
+        padding-top: 0.4vw;
+        padding-bottom: 0.4vw;
+        margin-top: 0.3vw;
+        margin-bottom: 0.3vw;
     }
 }

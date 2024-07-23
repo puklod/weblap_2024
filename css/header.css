@@ -1,5 +1,9 @@
 
 
+header {
+    position: relative;
+}
+
 header > #topbar {
     display: grid;
     background: black;
@@ -319,7 +323,11 @@ header.big > nav > #site-name > .side-icon {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1120px) {
+    header > #topbar {
+        grid-template-columns: 15% [left] 10% [middle] 50% [right] 10% 15%;
+    }
+
     header > #topbar > div.facebook > img {
         max-height: 3.5vw;
     }
@@ -338,10 +346,86 @@ header.big > nav > #site-name > .side-icon {
     }
 
     header > #topbar > #sitelogo {
-        width: 140px;
-        height: 140px;
+        width: 120px;
+        height: 120px;
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1320px) {
+    
+    header > #topbar {
+        grid-template-columns: 17% [left] 10% [middle] 46% [right] 10% 17%;
+    }
+    header > #topbar > div.facebook > img {
+        max-height: 3.2vw;
+    }
+
+    header.big > nav > #site-name {
+        font-size: 4.5vw;
+    }
+
+    header.big > nav > #site-name > .side-icon {
+        font-size: 1.1vw;
+        padding: 1vw;
+    }
+
+    header.big > nav > ul > li > a {
+        font-size: 2.3vw;
+    }
+}
+
+@media (min-width: 1560px) {
+    header > #topbar {
+        grid-template-columns: 19% [left] 10% [middle] 42% [right] 10% 19%;
+    }
+
+    header > #topbar > #sitelogo {
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+    }
+
+    header > #topbar > div.facebook > img {
+        max-height: 2.5vw;
+    }
+
+    header.big > nav > #site-name {
+        font-size: 4vw;
+    }
+
+    header.big > nav > #site-name > .side-icon {
+        font-size: 0.9vw;
+        padding: 0.9vw;
+    }
+
+    header.big > nav > ul > li > a {
+        font-size: 2vw;
+    }
+}
+
+@media (min-width: 1800px) {
+    header > #topbar {
+        grid-template-columns: 20% [left] 10% [middle] 40% [right] 10% 20%;
+    }
+
+    header > #topbar > #sitelogo {
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+    }
+
+    header > #topbar > div.facebook > img {
+        max-height: 2vw;
+    }
+
+    header.big > nav > #site-name {
+        font-size: 3.4vw;
+    }
+
+    header.big > nav > #site-name > .side-icon {
+        font-size: 0.7vw;
+        padding: 0.7vw;
+    }
+
+    header.big > nav > ul > li > a {
+        font-size: 1.8vw;
+    }
 }
