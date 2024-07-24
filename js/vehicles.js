@@ -7,7 +7,7 @@ const gallery = {
     imgElement: document.querySelector('#gallery-container'),
     imgFilePath: "images/gallery/",
     imgExtension: ".webp",
-    size: 2,
+    size: 5,
     delay: 5000,
 };
 

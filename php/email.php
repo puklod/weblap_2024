@@ -12,8 +12,8 @@
 
     
 
-$to="puklo.daniel@jamk.hu";
-$from="puklo.daniel@jamk.hu";
+$to="contact@goldtripbudapest.com";
+$from="contactform@goldtripbudapest.com";
 $header = array(
 	"From: {$name}<{$from}>",
   "Reply-To: {$email}",
