@@ -2,7 +2,7 @@ header {
     position: relative;
 }
 
-header > #topbar {
+#topbar {
     display: grid;
     background: black;
     grid-template-columns: 10% [left] 10% [middle] 60% [right] 10% 10%;
@@ -10,20 +10,20 @@ header > #topbar {
     justify-items: center;
 }
 
-header > #topbar > div.facebook {
+#topbar > div.facebook {
     grid-column: left;
     transition-property: visbility, opacity;
     transition-timing-function: linear;
     transition-duration: 200ms;
 }
 
-header > #topbar > div.facebook > a > img {
-    max-height: 9vw;
+#topbar > div.facebook > a > img {
+    height: 25px;
     border-radius: 20%;
     display: block;
 }
 
-header > #topbar > #sitelogo {
+#topbar > #sitelogo {
     grid-column: middle;
     background-position: center center;
     background-repeat: no-repeat;
@@ -35,18 +35,13 @@ header > #topbar > #sitelogo {
     margin-top: 1.5vw;
 }
 
-header > #topbar > #sitelogo > a {
-    display: block;
-    height: 100%;
-    width:100%;
-}
 
-header > nav {
+nav {
     z-index: 1;
 }
 
-header > nav > #site-name,
-header > nav > ul {
+nav > #site-name,
+nav > ul {
     user-select: none;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
@@ -88,8 +83,8 @@ header.small > #topbar > #navicon > .menuline {
     grid-column:1;
     grid-row:1;
     background: #a77d14;
-    width: 29px;
-    height: 4px;
+    width: 24px;
+    height: 3px;
 }
 
 header.small.opened > #topbar > #navicon > .menuline {
@@ -137,7 +132,7 @@ header.small.opened > nav {
 
 header.small > nav > #site-name {
     color: #c7bcb6;
-    font-size: 9vw;
+    font-size: 1.9em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,7 +140,7 @@ header.small > nav > #site-name {
 }
 
 header.small > nav > #site-name > .side-icon {
-    font-size: 2.6vw;
+    font-size: 0.23em;
     padding: 2vw;
 }
 
@@ -169,7 +164,7 @@ header.small > nav > ul > li > a {
     color:#a77d14;
     display: block;
     text-decoration: none;
-    font-size: 7vw;
+    font-size: 1.4em;
     font-weight: bold;
     font-family: 'Alegreya SC', serif;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -240,9 +235,6 @@ header.big > nav > ul > li > a:hover {
 }
 
 @media (min-width: 376px) {
-    header > #topbar > div.facebook > a > img {
-        max-height: 8vw;
-    }
     
     header > #topbar > #sitelogo {
         width: 105px;
@@ -250,49 +242,62 @@ header.big > nav > ul > li > a:hover {
     }
 }
 
-@media (min-width: 510px) {
+@media (min-width: 480px) {
     header > #topbar > div.facebook > a > img {
-        max-height: 7vw;
+        height: 30px;
     }
     
     header > #topbar > #sitelogo {
         width: 110px;
         height: 110px;
     }
-}
-
-@media (min-width: 580px) {
-
-    header > #topbar > div.facebook > a > img {
-        max-height: 6vw;
-    }
-
-    header.small > #topbar > #navicon > .menuline {
-        width: 32px;
-    }
 
     header.small > nav > #site-name {
-        font-size: 8vw;
+        font-size: 2.2em;
     }
 
     header.small > nav > ul > li > a {
-        font-size: 5.6vw;
+        font-size: 1.7em;
+    }
+
+}
+
+@media (min-width: 580px) {
+    header.small > nav > ul > li > a {
+        font-size: 2em;
+    }
+
+    header.small > nav > #site-name {
+        font-size: 2.8em;
+    }
+
+    header.small > nav > ul > li > a {
+        font-size: 2.2em;
     }
 
     header.small > nav > #site-name > .side-icon {
-        font-size: 1.9vw;
+        font-size: 0.25em;
         padding: 1.8vw;
     }
 }
 
 @media (min-width: 620px) {
     header > #topbar > div.facebook > a > img {
-        max-height: 6vw;
+        height:32px;
     }
 
     header > #topbar > #sitelogo {
         width: 130px;
         height: 130px;
+    }
+
+    header.small > nav > #site-name {
+        font-size: 3.2em;
+    }
+
+    header.small > nav > #site-name > .side-icon {
+        font-size: 0.23em;
+        padding: 1.8vw;
     }
 
     header.small > #topbar > #navicon > .menuline {
@@ -302,36 +307,32 @@ header.big > nav > ul > li > a:hover {
 
 @media (min-width: 769px) {
     header > #topbar > div.facebook > a > img {
-        max-height: 5vw;
+        height: 36px;
     }
 
     header > #topbar > #sitelogo {
-        width: 115px;
-        height: 115px;
+        width: 120px;
+        height: 120px;
         margin-bottom: 1.5vw;
     }
 
     header.big > nav > #site-name {
-        font-size: 6vw;
+        font-size: 4em;
     }
 
     header.big > nav > #site-name > .side-icon {
-        font-size: 2vw;
-        padding: 1.4vw;
+        font-size: 0.2em;
+        padding: 1.3vw;
     }
 
     header.big > nav > ul > li > a {
-        font-size: 3.3vw;
+        font-size: 1.8em;
     }
 }
 
 @media (min-width: 1020px) {
     header > #topbar {
         grid-template-columns: 15% [left] 10% [middle] 50% [right] 10% 15%;
-    }
-
-    header > #topbar > div.facebook > a > img {
-        max-height: 3.5vw;
     }
 
     header > #topbar > #sitelogo {
@@ -341,30 +342,30 @@ header.big > nav > ul > li > a:hover {
     }
 
     header.big > nav > #site-name {
-        font-size: 5vw;
+        font-size: 4em;
     }
 
     header.big > nav > #site-name > .side-icon {
-        font-size: 1.5vw;
+        font-size: 0.2em;
         padding: 1vw;
     }
 
     header.big > nav > ul > li > a {
-        font-size: 2.5vw;
+        font-size: 1.8em;
     }
 }
 
-@media (min-width: 1320px) {
+@media (min-width: 1250px) {
     
     header > #topbar {
         grid-template-columns: 17% [left] 10% [middle] 46% [right] 10% 17%;
     }
     header > #topbar > div.facebook > a > img {
-        max-height: 3.2vw;
+        height: 37px;
     }
 
     header.big > nav > #site-name {
-        font-size: 4.5vw;
+        font-size: 4.2em;
     }
 
     header.big > nav > #site-name > .side-icon {
@@ -373,7 +374,7 @@ header.big > nav > ul > li > a:hover {
     }
 
     header.big > nav > ul > li > a {
-        font-size: 2.3vw;
+        font-size: 2em;
     }
 }
 
@@ -389,21 +390,17 @@ header.big > nav > ul > li > a:hover {
         margin-bottom: 1vw;
     }
 
-    header > #topbar > div.facebook > a > img {
-        max-height: 2.5vw;
-    }
-
     header.big > nav > #site-name {
-        font-size: 4vw;
+        font-size: 4.5em;
     }
 
     header.big > nav > #site-name > .side-icon {
-        font-size: 0.9vw;
+        font-size: 0.2em;
         padding: 0.9vw;
     }
 
     header.big > nav > ul > li > a {
-        font-size: 2vw;
+        font-size: 2.2em;
     }
 }
 
@@ -417,55 +414,51 @@ header.big > nav > ul > li > a:hover {
         margin-bottom: 1vw;
     }
 
-    header > #topbar > div.facebook > a > img {
-        max-height: 2vw;
-    }
-
     header.big > nav > #site-name {
-        font-size: 3.4vw;
+        font-size: 4.5em;
     }
 
     header.big > nav > #site-name > .side-icon {
-        font-size: 0.7vw;
+        font-size: 0.2em;
         padding: 0.7vw;
     }
 
     header.big > nav > ul > li > a {
-        font-size: 1.8vw;
+        font-size: 2.1em;
     }
 }
 
 @media (min-width: 1980px) {
     header > #topbar > #sitelogo {
-        width: 135px;
-        height: 135px;
+        width: 140px;
+        height: 140px;
     }
 }
 
 @media (min-width: 2300px) {
     header > #topbar {
-        grid-template-columns: 21% [left] 10% [middle] 38% [right] 10% 21%;
+        grid-template-columns: 23% [left] 10% [middle] 34% [right] 10% 23%;
     }
 
     header > #topbar > div.facebook > a > img {
-        max-height: 2vw;
-    }
-    
+        height: 45px;
+    }    
+
     header > #topbar > #sitelogo {
         margin-top: 1vw;
         margin-bottom: 1vw;
     }
 
     header.big > nav > #site-name {
-        font-size: 3.1vw;
+        font-size: 5em;
     }
 
     header.big > nav > #site-name > .side-icon {
-        font-size: 0.5vw;
+        font-size: 0.2em;
         padding: 0.5vw;
     }
 
     header.big > nav > ul > li > a {
-        font-size: 1.6vw;
+        font-size: 2.2em;
     }
 }

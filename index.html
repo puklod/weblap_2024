@@ -16,7 +16,9 @@
         <div id="back-to-the-top-button">
             <i class="fa-solid fa-angle-up"></i>
         </div>
+        <script src="js/back_to_the_top_button.js"></script>
         <div id="background-car-img"></div>
+        <script src="js/add_background_car_img.js"></script>
         <header id="top">
             <div id="topbar">
                 <div class="facebook">
@@ -32,16 +34,21 @@
                 <div id="site-name">
                     <span class="side-icon"><i class="fa-solid fa-diamond"></i></span>
                     <span>Gold Trip Budapest</span>
-                    <span class="side-icon"><i class="fa-solid fa-diamond"></i></span></div></nav>
+                    <span class="side-icon"><i class="fa-solid fa-diamond"></i></span>
+                </div>
+            </nav>
+            <script src="js/menu_creator.js"></script>
+            <script src="js/menu_setsize.js"></script>
+            <script src="js/menu_open_close.js"></script>
         </header>
         <div id="body-content" class="transparent-background">
             <div id="about-us" class='content first-content'>
                 <div><img class="wide-img" src=images/page/car.webp></div>
-                <div class="text justyfied">
+                <div class="text text-justyfied">
                     <p>Our company’s focus is quality - with affordable prices and maximum reliability.
                     We offer services throughout the year in 24 hours. You can enjoy your travel in our luxury category car from Budapest to any neighbouring countries - and back.
                     Our company provides door to door services with additional stops, sightseeing detours and more - considering the desires of our clients.</p>
-                    <p>With any further questions please reach out to our <a class="anchor text-link" href="#costumer-service">support desk</a>.
+                    <p>With any further questions please reach out to our <a class="anchor text-link" href="#costumer-service">support desk</a>.<br>
                     To request special offers, use the <a class="anchor text-link" href="#for-offers">dedicated contact form</a>.</p>
                 </div>
                 <div id="vehicles">
@@ -54,12 +61,13 @@
                         </div>
                     </div>
                 </div>
+                <script src="js/vehicles.js"></script>
             </div>
             <div id='prices' class='content'>
 
                 <p class="content-title"> Fix prices</p>
                
-                <div class="grid-text grid-two-columns">
+                <div class="grid-text grid-price-list">
                     <span class="grid-text-title column-all">One way:</span>
                     <span class="column-1">Airport <i class="fa-solid fa-arrow-right"></i> Pest</span>
                     <span class="column-2">60€</span>
@@ -83,44 +91,38 @@
                     <span class="column-2">400€</span>
                 </div>
                     <p class="content-title">Transfer to everywhere</p>
-                    <div class="text justyfied">
+                    <div class="text text-justyfied">
                         <p>
                         We are open to unique requests. We can spend our whole day with you, we do countryside transfers and many more. <a class="anchor text-link" href="/pages/foroffers.php">Contact us</a> to get a personalized offer.
                         Prices given in EUR will be changed to HUF on the official central rate of the Hungarian National Bank.
                         </p>
-                        <p class="payment-icons-title centered">Payment methods: Cash or Credit card</p>
-                        <div id="payment-icons">
-
-                        </div>
+                        <p class="payment-icons-title text-centered">Payment methods: Cash or Credit card</p>
+                        <div id="payment-icons"></div>
+                        <script src="js/add_payment_icons.js"></script>
                     </div>
             </div>
             <div id="for-offers" class='content'>
                 <div class="content-title">For offers</div>
             </div>
+            <script src="js/contact_form.js"></script>
             <div id="costumer-service" class="content">
                 <p class="content-title">Costumer service</p>                               
-                <div class="grid-three-rows-two-columns">
-                    <span class="column-1 row-all text-center support-img-container">
-                        <div class="support-img-background"></div>
-                        <img src="/images/page/support_no_back.png" class="support-img">
-                    </span>
-                    <span class="column-2 row-1 service-big-font">Richard Kovacs</span>
-                    <span class="column-2 row-2 service-medium-font">+36307282621</span>
-                    <span class="column-2 row-3 service-medium-font"><a href="https://wa.me/36307282621"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></span>
+                <div class="grid-costumer-service">
+                    <div class="column-1 costumer-service-img-container">
+                        <div class="costumer-service-img-background"></div>
+                        <img src="/images/page/costumer_service.webp" class="costumer-service-img">
+                    </div>
+                    <div class="column-2 costumer-service-text-container">
+                    <span class="costumer-service-big-font">Richard Kovacs</span>
+                    <span class="costumer-service-medium-font">+36307282621</span>
+                    <span class="costumer-service-medium-font"><a href="https://wa.me/36307282621"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a></span>
+                    </div>
                 </div>
             </div>         
         </div>
         <footer>
             <p>Gold Trip Budapest - since 2023</p>
         </footer>
-        <script src="js/add_background_car_img.js"></script>
-        <script src="js/add_payment_icons.js"></script>
-        <script src="js/back_to_the_top_button.js"></script>
-        <script src="js/contact_form.js"></script>
-        <script src="js/menu_setsize.js"></script>
-        <script src="js/menu_creator.js"></script>
-        <script src="js/menu_open_close.js"></script>
-        <script src="js/menu_anchor_link_smooth_animation.js"></script>
-        <script src="js/vehicles.js"></script>
+        <script src="js/anchor_link_smooth_animation.js"></script>
     </body>
 </html>

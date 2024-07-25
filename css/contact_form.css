@@ -1,5 +1,5 @@
 .form-text {
-    font-size: 5vw;
+    font-size: 1em;
 }
 
 .input {
@@ -14,7 +14,7 @@
 
 .input::placeholder {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 4vw;
+    font-size: 0.9em;
     user-select: none;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
@@ -26,6 +26,7 @@
     width: 21vw;
     height: 6vw;
     margin-top: 2vw;
+    font-size: 0.8em;
     cursor: pointer;
 }
 
@@ -45,55 +46,71 @@
     text-align: center;
 }
 
-
-@media (min-width: 376px) {
+@media (min-width: 480px) {
     .form-text {
-        font-size: 4vw;
+        font-size: 1.1em;
     }
 
     .input::placeholder {
-        font-size: 3.5vw;
+        font-size: 1em;
     }
 
     .submit-button {
-        font-size: 3.5vw;
-    }
-}
-
-@media (min-width: 510px) {
-    .form-text {
-        font-size: 4vw;
-    }
-
-    .input::placeholder {
-        font-size: 3vw;
-    }
-
-    .submit-button {
-        font-size: 3vw;
+        font-size: 0.7em;
+        width: 16vw;
+        height: 5vw;
     }
 }
 
 @media (min-width: 580px) {
 
+    .input {
+        width: 75%;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        margin-top: 0.5vw;
+        margin-bottom: 0.5vw;
+    }
+
+    .input::placeholder {
+        font-size: 1em;
+    }
+
     .submit-button {
-        font-size: 2.7vw;
+        font-size: 0.7em;
+        width: 12vw;
+        height: 4vw;
+    }
+}
+
+@media (min-width: 620px) {
+
+    .form-text {
+        font-size: 1.2em;
+    }
+
+    .input {
+        width: 65%;
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+        margin-top: 0.5vw;
+        margin-bottom: 0.5vw;
+    }
+
+    .input::placeholder {
+        font-size: 1em;
+    }
+
+    .submit-button {
+        font-size: 0.8em;
+        width: 12vw;
+        height: 4vw;
     }
 }
 
 @media (min-width: 769px) {
     .form-text {
-        font-size: 3vw;
-    }
-
-    .input::placeholder {
-        font-size: 2vw;
-    }
-
-    .submit-button {
-        font-size: 2vw;
-        width: 15vw;
-        height: 5vw;
+        font-size: 1.4em;
     }
 
     .input {
@@ -103,19 +120,29 @@
         margin-top: 0.5vw;
         margin-bottom: 0.5vw;
     }
-}
-
-@media (min-width: 1120px) {
-    .form-text {
-        font-size: 2vw;
-    }
 
     .input::placeholder {
-        font-size: 1.5vw;
+        font-size: 1.3em;
     }
 
     .submit-button {
-        font-size: 1.4vw;
+        font-size: 1em;
+        width: 10vw;
+        height: 3vw;
+    }
+}
+
+@media (min-width: 1020px) {
+    .form-text {
+        font-size: 1.2em;
+    }
+
+    .input::placeholder {
+        font-size: 1.06em;
+    }
+
+    .submit-button {
+        font-size: 0.8em;
         width: 10vw;
         height: 3vw;
     }
@@ -129,17 +156,18 @@
     }
 }
 
-@media (min-width: 1320px) {
+
+@media (min-width: 1250px) {
     .form-text {
-        font-size: 1.5vw;
+        font-size: 1.3em;
     }
 
     .input::placeholder {
-        font-size: 1.3vw;
+        font-size: 1.1em;
     }
 
     .submit-button {
-        font-size: 1.1vw;
+        font-size: 0.9em;
         width: 8.5vw;
         height: 2.3vw;
     }
@@ -155,17 +183,17 @@
 
 @media (min-width: 1560px) {
     .form-text {
-        font-size: 1.3vw;
+        font-size: 1.3em;
         margin-top: 1vw;
         margin-bottom:1vw;
     }
 
     .input::placeholder {
-        font-size: 1.1vw;
+        font-size: 1.1em;
     }
 
     .submit-button {
-        font-size: 1.0vw;
+        font-size: 0.9em;
         width: 8.1vw;
         height: 2vw;
         margin-top:1.2vw;
@@ -182,18 +210,18 @@
 
 @media (min-width: 1800px) {
     .form-text {
-        font-size: 1.2vw;
+        font-size: 1.2em;
         margin-top: 0.7vw;
         margin-bottom: 0.7vw;
     }
 
     .input::placeholder {
-        font-size: 0.9vw;
+        font-size: 1em;
     }
 
     .submit-button {
-        font-size: 0.8vw;
-        width: 7.5vw;
+        font-size: 0.8em;
+        width: 7vw;
         height: 1.6vw;
         margin-top: 0.8vw;
     }
@@ -209,17 +237,17 @@
 
 @media (min-width: 2300px) {
     .form-text {
-        font-size: 1vw;
+        font-size: 1.5em;
         margin-top: 0.7vw;
         margin-bottom: 0.7vw;
     }
 
     .input::placeholder {
-        font-size: 0.8vw;
+        font-size: 1.3em;
     }
 
     .submit-button {
-        font-size: 0.7vw;
+        font-size: 1em;
         width: 7.2vw;
         height: 1.4vw;
         margin-top: 0.8vw;

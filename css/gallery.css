@@ -27,7 +27,7 @@
     padding: 0vw 1vw 0vw 1vw;
     align-content: space-around;
     opacity: 0%;
-    font-size: 4vw;
+    font-size: 1.4em;
     transition-property: opacity;
     transition-duration: 200ms;
     transition-timing-function: linear;
@@ -39,14 +39,21 @@
     max-width: 100%;
 }
 
-.gallery-arrow {
-    font-size: 7vw;
-}
-
 @media (min-width: 376px) {
     #gallery-container {
        width: 65vw;
        height: 49vw;
+    }
+}
+
+@media (min-width: 480px) {
+    #gallery-container {
+       width: 61vw;
+       height: 45vw;
+    }
+
+    .gallery-arrow {
+        font-size: 1.7em;
     }
 }
 
@@ -56,6 +63,17 @@
         width: 60vw;
         height: 45vw;
      }
+
+     .gallery-arrow {
+        font-size: 2.5em;
+    }
+}
+
+@media (min-width: 769px) {
+    #gallery-container {
+        width: 56vw;
+        height: 42vw;
+    }
 }
 
 @media (min-width: 1020px) {
@@ -65,7 +83,7 @@
      }
 
      .gallery-arrow {
-        font-size: 3.5vw;
+        font-size: 2.2em;
     }
 }
 
@@ -76,7 +94,7 @@
      }
 
      .gallery-arrow {
-        font-size: 3vw;
+        font-size: 3em;
     }
 }
 

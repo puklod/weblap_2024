@@ -1,5 +1,6 @@
 html {
     background: black;
+    min-width: 320px;
 }
 
 a {
@@ -59,8 +60,8 @@ body {
     grid-row: button-row;
     visibility: hidden;
     opacity: 0;
-    width: 12vw;
-    height: 12vw;
+    width: 35px;
+    height: 35px;
     pointer-events: all;
     cursor: pointer;
     display: flex;
@@ -99,7 +100,7 @@ body {
 .content-title {
     text-align: center;
     color:#cd9303;
-    font-size: 7vw;
+    font-size: 1.4em;
     margin-top: 1vw;
     margin-bottom: 1vw;
 }
@@ -110,15 +111,15 @@ body {
 
 .text {
     font-family: 'Raleway', sans-serif;
-    font-size: 4vw;
+    font-size: 0.8em;
     line-height: 5vw;
 }
 
-.justyfied {
+.text-justyfied {
     text-align: justify;
 }
 
-.centered {
+.text-centered {
     text-align: center;
 }
 
@@ -126,25 +127,25 @@ body {
     font-weight: bold;
 }
 
-.grid-text {
-    font-family: 'Raleway', sans-serif;
-    font-size: 4vw;
-    line-height: 6vw;
-}
-
 .grid-text-title {
-    font-size: 5vw;
+    font-size: 1.2em;
     padding-top: 2vw;
     padding-bottom: 2vw;
 }
 
+.grid-text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.8em;
+    line-height: 6vw;
+}
+
 .fa-arrow-right,
 .fa-arrows-left-right {
-    font-size: 3vw;
+    font-size: 0.7em;
 }
 
 .payment-icons-title {
-    font-size: 3.5vw;
+    font-size: 0.9em;
 }
 
 #payment-icons {
@@ -154,29 +155,21 @@ body {
 }
 
 .payment-icon {
-    max-height: 6vw;
+    height: 20px;
     margin-left: 3vw;
     margin-right: 3vw;
 }
 
-.grid-three-column-area {
-    display: grid;
-    grid-template-columns: 5% [left] 10% [middle] 70% [right] 10% 5%;
-    align-items: center;
-    justify-items: center;
-}
-
-.grid-two-columns {
+.grid-price-list {
     display: grid;
     grid-template-columns: [column-1] 75% [column-2] auto;
     justify-content: center;
     margin-bottom: 3vw;
 }
 
-.grid-three-rows-two-columns {
+.grid-costumer-service {
     display: grid;
-    grid-template-columns: [column-1] 53% [column-2] 45%;
-    grid-template-rows: [row-1] 33% [row-2] 33% [row-3] 33%;
+    grid-template-columns: [column-1] 45% [column-2] 45%;
     justify-content: center;
     align-items: center;
 }
@@ -211,33 +204,19 @@ body {
     grid-row-end: last;
 }
 
-.text-title {
-    padding-top: 3vw;
-    padding-bottom: 3vw;
-    font-size: 4.5vw;
-}
-
-.service-big-font {
-    font-size: 5vw;
-}
-
-.service-medium-font {
-    font-size: 5vw;
-}
-
-.support-img-container {
+.costumer-service-img-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.support-img {
+.costumer-service-img {
     border-radius: 33%;
     width: 85px;
     z-index: 1;
 }
 
-.support-img-background {
+.costumer-service-img-background {
     width: 91px;
     height: 64px;
     background: #cccccc;
@@ -247,10 +226,25 @@ body {
     margin-top: 10px;
 }
 
+.costumer-service-text-container {
+    display: flex;
+    flex-direction: column;
+    line-height: 6.5vw;
+}
+
+.costumer-service-big-font {
+    font-size: 1em;
+}
+
+.costumer-service-medium-font {
+    font-size: 1em;
+}
+
 footer {
     position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
     font-family: 'Raleway', sans-serif;
     font-size: 3vw;
@@ -263,36 +257,31 @@ footer {
 
 @media (min-width: 376px) {
     #back-to-the-top-button > i {
-        width: 10vw;
-        height: 10vw;
+        width: 40px;
+        height: 40px;
+    }
+
+    .content-title {
+        font-size: 1.5em;
     }
 
     .text {
-        font-size: 3.4vw;
-    }
-
-    .text-title {
-        font-size: 4.6vw;
+        font-size: 0.8em;
     }
 
     .grid-text-title {
-        font-size: 4vw;
         padding-top: 2vw;
         padding-bottom: 2vw;
+        font-size: 1.2em;
     }
 
     .grid-text {
-        font-size: 3.4vw;
         line-height: 6vw;
+        font-size: 0.8em;
     }
     
-    .fa-arrow-right,
-    .fa-arrows-left-right {
-        font-size: 2.5vw;
-    }
-
     .payment-icon {
-        max-height: 4vw;
+        height: 15px;
         margin-left: 2vw;
         margin-right: 2vw;
     }
@@ -304,119 +293,194 @@ footer {
     .support-img-background {
         margin-top: 17px;
     }
+
+    .costumer-service-text-container {
+        line-height: 6vw;
+    }
+
+    footer {
+        font-size: 0.6em;
+    }
 }
 
-@media (min-width: 510px) {
+@media (min-width: 480px) {
     #back-to-the-top-button > i {
-        width: 8vw;
-        height: 8vw;
+        width: 43px;
+        height: 43px;
     }
+
+    .content-title {
+        font-size: 1.8em;
+    }
+
     .text {
-        font-size: 3.1vw;
+        font-size: 0.9em;
     }
 
     .text > p {
         margin-top: 2vw;
         margin-bottom: 2vw;
+        line-height: 4.2vw;
     }
 
-    .fa-arrow-right,
-    .fa-arrows-left-right {
-        font-size: 2.2vw;
+    .grid-text-title {
+        font-size: 1.2em;
+    }
+
+    .grid-text {
+        font-size: 0.9em;
+        line-height: 5vw;
     }
 
     .payment-icons-title {
-        font-size: 2.9vw;
+        font-size: 1em;
         padding-top: 2vw;
     }
 
-    .support-img {
-        width: 100px;
+    .payment-icon {
+        height: 22px;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
     }
 
-    .support-img-background {
-        margin-top: 18px;
-        width: 100px;
-        height: 70px;
+    .grid-costumer-service {
+        grid-template-columns: [column-1] 35% [column-2] 35%;
+    }
+
+    .costumer-service-img {
+        width: 101px;
+    }
+
+    .costumer-service-img-background {
+        width: 98px;
+        height: 68px;
+        margin-top: 20px;
+    }
+
+    .costumer-service-text-container {
+        line-height: 4.8vw;
+    }
+
+    .costumer-service-big-font {
+        font-size: 1.2em;
+    }
+
+    .costumer-service-medium-font {
+        font-size: 1.1em;
     }
    
     footer {
-        font-size: 2.5vw;
+        font-size: 0.7em;
     }
 
 }
 
 @media (min-width: 580px) {
     .content-title {
-        font-size: 6.5vw;
+        font-size: 2em;
     }
 
     .text {
-        font-size: 3vw;
+        font-size: 1em;
+    }
+
+    .grid-price-list {
+        grid-template-columns: [column-1] 65% [column-2] auto;
     }
 
     .grid-text-title {
-        font-size: 3.5vw;
+        font-size: 1.3em;
         padding-top: 1.5vw;
         padding-bottom: 1.5vw;
     }
 
     .grid-text {
-        font-size: 3vw;
-        line-height: 6vw;
+        font-size: 1em;
+        line-height: 5vw;
     }
 
     .fa-arrow-right,
     .fa-arrows-left-right {
-        font-size: 2.1vw;
+        font-size: 0.8em;
     }
 
-    .service-big-font {
-        font-size: 4vw;
-    }
-
-    .service-medium-font {
-        font-size: 3.5vw;
+    .payment-icon {
+        height: 24px;
+        margin-left: 2vw;
+        margin-right: 2vw;
     }
     
+    .costumer-service-text-container {
+        line-height: 4vw;
+    }
 }
 
 @media (min-width: 620px) {
     #back-to-the-top-button > i {
-        width: 7vw;
-        height: 7vw;
+        width: 45px;
+        height: 45px;
+    }
+
+    .content-title {
+        font-size: 2.5em;
     }
 
     .text {
-        font-size: 2.5vw;
+        font-size: 1em;
     }
     
     .text > p {
         margin-top: 1vw;
         margin-bottom: 1vw;
-        line-height: 4.2vw;
+        line-height: 4vw;
     }
 
     .grid-text-title {
-        font-size: 3.5vw;
+        font-size: 1.2em;
         padding-top: 1.4vw;
         padding-bottom: 1.4vw;
     }
 
     .grid-text {
-        font-size: 2.9vw;
-        line-height: 6vw;
+        font-size: 1em;
+        line-height: 4vw;
+    }
+
+    .payment-icons-title {
+        font-size: 1em;
+    }
+
+    .costumer-service-img {
+        width: 108px;
+    }
+
+    .costumer-service-img-background {
+        width: 106px;
+        height: 72px;
+        margin-top: 22px;
+    }
+
+    .costumer-service-text-container {
+        line-height: 3.3vw;
+    }
+
+    .costumer-service-big-font {
+        font-size: 1.3em;
+    }
+
+    .costumer-service-medium-font {
+        font-size: 1.2em;
     }
     
     footer {
-        font-size: 2vw;
+        font-size: 0.8em;
     }
 }
 
 @media (min-width: 769px) {
     #back-to-the-top-button > i {
-        width: 5.5vw;
-        height: 5.5vw;
+        width: 48px;
+        height: 48px;
     }
 
     #back-to-the-top-button > i:hover {
@@ -424,56 +488,69 @@ footer {
     }
 
     .content-title {
-        font-size: 5vw;
+        font-size: 3em;
     }
 
     .text {
-        font-size: 2.2vw;
+        font-size: 1.2em;
     }
 
     .text > p {
         margin-top: 1vw;
         margin-bottom: 1vw;
-        line-height: 3.8vw;
+        line-height: 3.4vw;
+    }
+
+    .grid-price-list {
+        grid-template-columns: [column-1] 60% [column-2] auto;
     }
 
     .grid-text-title {
-        font-size: 3vw;
+        font-size: 1.2em;
         padding-top: 1.1vw;
         padding-bottom: 1.1vw;
     }
 
     .grid-text {
-        font-size: 2.3vw;
-        line-height: 5vw;
+        font-size: 1.2em;
+        line-height: 4vw;
+    }
+
+    .fa-arrow-right,
+    .fa-arrows-left-right {
+        font-size: 0.7em;
     }
 
     .payment-icons-title {
-        font-size: 2.3vw;
+        font-size: 1em;
         padding-top: 2vw;
     }
 
     .payment-icon {
-        max-height: 4vw;
+        height: 28px;
     }
 
-    .support-img {
+    .grid-costumer-service {
+        grid-template-columns: [column-1] 30% [column-2] 30%;
+    }
+
+    .costumer-service-img {
         width: 120px;
     }
 
-    .support-img-background {
+    .costumer-service-img-background {
         margin-top: 20px;
         width: 120px;
         height: 84px;
     }
 
-    .service-big-font {
-        font-size: 3.5vw;
+    .costumer-service-big-font {
+        font-size: 1.5em;
     }
 
-    .service-medium-font {
-        font-size: 3vw;
-    }    
+    .costumer-service-medium-font {
+        font-size: 1.4em;
+    }
 }
 
 
@@ -483,8 +560,8 @@ footer {
     }
 
     #back-to-the-top-button > i {
-        width: 4vw;
-        height: 4vw;
+        width: 50px;
+        height: 50px;
     }
 
     #body-content {
@@ -492,11 +569,11 @@ footer {
     }
 
     .content-title {
-        font-size: 4vw;
+        font-size: 2.4em;
     }
 
     .text {
-        font-size: 1.7vw;
+        font-size: 1.2em;
     }
 
     .text > p {
@@ -505,63 +582,58 @@ footer {
         line-height: 3vw;
     }
 
-    .grid-two-columns {
+    .grid-price-list {
         grid-template-columns: [column-1] 60% [column-2] auto;
     }
 
     .grid-text-title {
-        font-size: 2.1vw;
+        font-size: 1.3em;
         padding-top: 0.6vw;
         padding-bottom: 0.6vw;
     }
     
     .grid-text {
-        font-size: 1.7vw;
-        line-height: 4vw;
-    }
-
-    .fa-arrow-right,
-    .fa-arrows-left-right {
-        font-size: 1.2vw;
+        font-size: 1.2em;
+        line-height: 3.5vw;
     }
 
     .payment-icons-title {
-        font-size: 1.7vw;
-        padding-top: 2vw;
+        font-size: 1em;
+        padding-top: 1.8vw;
     }
     .payment-icon {
-        max-height: 3.5vw;
-        margin-left: 1.8vw;
-        margin-right: 1.8vw;
+        margin-left: 1.5vw;
+        margin-right: 1.5vw;
     }
 
-    .service-big-font {
-        font-size: 2.5vw;
+    .costumer-service-big-font {
+        font-size: 1.8em;
     }
     
-    .service-medium-font {
-        font-size: 2vw;
+    .costumer-service-medium-font {
+        font-size: 1.7em;
     }
 
-    .support-img {
+    .costumer-service-img {
         width: 130px;
     }
 
-    .support-img-background {
+    .costumer-service-img-background {
         margin-top: 24px;
         width: 130px;
         height: 89px;
     }
 }
 
-@media (min-width: 1320px) {
+
+@media (min-width: 1250px) {
     #back-to-the-top-button {
         grid-template-columns: [left] 80% [button] 9% [right] 11%;
     }
 
     #back-to-the-top-button > i {
-        width: 3.5vw;
-        height: 3.5vw;
+        width: 51px;
+        height: 51px;
     }
 
     #body-content {
@@ -569,54 +641,62 @@ footer {
     }
 
     .content-title {
-        font-size: 3.4vw;
+        font-size: 2.8em;
     }
 
     .text {
-        font-size: 1.4vw;
+        font-size: 1.1em;
     }
 
-    .grid-two-columns {
+    .text > p {
+        line-height: 2.7vw;
+    }
+
+    .grid-price-list {
         grid-template-columns: [column-1] 55% [column-2] auto;
     }
     
     .grid-text-title {
-        font-size: 1.8vw;
+        font-size: 1.3em;
         padding-top: 0.6vw;
         padding-bottom: 0.6vw;
     }
     
     .grid-text {
-        font-size: 1.4vw;
+        font-size: 1.1em;
         line-height: 3vw;
     }
     
     .fa-arrow-right,
     .fa-arrows-left-right {
-        font-size: 1vw;
+        font-size: 0.8em;
     }
 
     .payment-icons-title {
-        font-size: 1.4vw;
+        font-size: 1em;
         padding-top: 2vw;
     }
 
     .payment-icon {
-        max-height: 3vw;
+        height: 31px;
         margin-left: 1.5vw;
         margin-right: 1.5vw;
     }
 
-    .service-big-font {
-        font-size: 2.2vw;
+    .costumer-service-text-container {
+        line-height: 2.6vw;
+    }
+
+    .costumer-service-big-font {
+        font-size: 1.7em;
     }
     
-    .service-medium-font {
-        font-size: 1.8vw;
+    .costumer-service-medium-font {
+        font-size: 1.6em;
     }
 
     footer {
-        font-size: 1.1vw;
+        font-size: 0.8em;
     }
 }
 
@@ -625,17 +705,12 @@ footer {
         grid-template-columns: [left] 78% [button] 9% [right] 13%;
     }
 
-    #back-to-the-top-button > i {
-        width: 3vw;
-        height: 3vw;
-    }
-
     #body-content {
         grid-template-columns: [left] 20% [middle] 60% [right] 20%;
     }
 
     .text {
-        font-size: 1.3vw;
+        font-size: 1.2em;
     }
 
     .text > p {
@@ -649,53 +724,57 @@ footer {
     }
 
     .content-title {
-        font-size: 3vw;
+        font-size: 3em;
     }
 
-    .grid-two-columns {
+    .grid-price-list {
         grid-template-columns: [column-1] 55% [column-2] auto;
     }
     
     .grid-text-title {
-        font-size: 1.6vw;
+        font-size: 1.4em;
         padding-top: 0.6vw;
         padding-bottom: 0.6vw;
     }
     
     .grid-text {
-        font-size: 1.3vw;
+        font-size: 1.2em;
         line-height: 2.5vw;
     }
     
     .fa-arrow-right,
     .fa-arrows-left-right {
-        font-size: 0.9vw;
+        font-size: 0.7em;
     }
 
     .payment-icons-title {
-        font-size: 1.3vw;
+        font-size: 1em;
         padding-top: 1.6vw;
     }
     .payment-icon {
-        max-height: 2.5vw;
+        height: 32px;
         margin-left: 1.3vw;
         margin-right: 1.3vw;
     }
 
-    .grid-three-rows-two-columns {
+    .grid-costumer-service {
         grid-template-columns: [column-1] 30% [column-2] 30%;
     }
 
-    .service-big-font {
-        font-size: 2vw;
+    .costumer-service-text-container{
+        line-height: 2.5vw;
+    }
+
+    .costumer-service-big-font {
+        font-size: 1.8em;
     }
     
-    .service-medium-font {
-        font-size: 1.6vw;
+    .costumer-service-medium-font {
+        font-size: 1.7em;
     }
 
     footer {
-        font-size: 1vw;
+        font-size: 0.8em;
     }
 }
 
@@ -705,8 +784,8 @@ footer {
     }
 
     #back-to-the-top-button > i {
-        width: 2.5vw;
-        height: 2.5vw;
+        width: 52px;
+        height: 52px;
     }
 
     #body-content {
@@ -714,99 +793,131 @@ footer {
     }
 
     .content-title {
-        font-size: 2.5vw;
+        font-size: 2.5em;
         margin-top: 0.4vw;
         margin-bottom: 0.4vw;
     }
 
-    .text {
-        font-size: 1.1vw;
+    .grid-price-list {
+        grid-template-columns: [column-1] 50% [column-2] auto;
     }
-    
+
     .grid-text-title {
-        font-size: 1.4vw;
+        font-size: 1.4em;
     }
     
     .grid-text {
-        font-size: 1.1vw;
-        line-height: 2.2vw;
+        font-size: 1.2em;
+        line-height: 2vw;
     }
     
     .payment-icons-title {
-        font-size: 1.1vw;
+        font-size: 1em;
         padding-top: 1.2vw;
     }
     .payment-icon {
-        max-height: 2vw;
+        height: 32px;
+        margin-left: 1.2vw;
+        margin-right: 1.2vw;
     }
 
-    .service-big-font {
-        font-size: 1.8vw;
+    .grid-costumer-service {
+        grid-template-columns: [column-1] 20% [column-2] 20%;
+    }
+
+    .costumer-service-text-container {
+        line-height: 1.8vw;
+    }
+
+    .costumer-service-big-font {
+        font-size: 1.6em;
     }
     
-    .service-medium-font {
-        font-size: 1.4vw;
+    .costumer-service-medium-font {
+        font-size: 1.5em;
     }
 
     footer {
-        font-size: 0.8vw;
+        font-size: 0.8em;
     }
 }
 
 @media (min-width: 2300px) {
     #back-to-the-top-button {
-        grid-template-columns: [left] 72% [button] 9% [right] 19%;
+        grid-template-columns: [left] 71% [button] 9% [right] 20%;
+    }
+
+    #back-to-the-top-button > i {
+        width: 58px;
+        height: 58px;
     }
 
     #body-content {
-        grid-template-columns: [left] 25% [middle] 50% [right] 25%;
+        grid-template-columns: [left] 26% [middle] 48% [right] 26%;
     }
 
     .content-title {
-        font-size: 2.1vw;
+        font-size: 3em;
         margin-top: 0.3vw;
         margin-bottom: 0.3vw;
     }
 
     .text {
-        font-size: 1vw;
+        font-size: 1.4em;
     }
 
     .text > p {
         line-height: 1.6vw;
     }
 
-    .grid-two-columns {
-        grid-template-columns: [column-1] 51% [column-2] auto;
-    }
-    
     .grid-text-title {
-        font-size: 1.2vw;
+        font-size: 1.4em;
     }
     
     .grid-text {
-        font-size: 1vw;
-        line-height: 2vw;
+        font-size: 1.2em;
+        line-height: 1.4vw;
     }
     
     .fa-arrow-right,
     .fa-arrows-left-right {
-        font-size: 0.7vw;
+        font-size: 0.6em;
     }
 
     .payment-icons-title {
-        font-size: 1vw;
+        font-size: 1em;
         padding-top: 1vw;
     }
     .payment-icon {
-        max-height: 1.8vw;
+        height: 35px;
+        padding-left: 0.2vw;
+        padding-right: 0.2vw;
     }
 
-    .service-big-font {
-        font-size: 1.6vw;
+    .costumer-service-img {
+        width: 145px;
+    }
+
+    .costumer-service-img-background {
+        margin-top: 29px;
+        width: 137px;
+        height: 99px;
+        border-radius: 21%;
+    }
+
+    .costumer-service-text-container {
+        line-height: 1.5vw;
+    }
+
+    .costumer-service-big-font {
+        font-size: 2em;
     }
     
-    .service-medium-font {
-        font-size: 1.2vw;
+    .costumer-service-medium-font {
+        font-size: 1.9em;
+    }
+
+    footer {
+        font-size: 1em;
     }
 }

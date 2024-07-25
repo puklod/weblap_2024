@@ -13,9 +13,8 @@
     
 
 $to="contact@goldtripbudapest.com";
-$from="contactform@goldtripbudapest.com";
 $header = array(
-	"From: {$name}<{$from}>",
+	"From: {$name}",
   "Reply-To: {$email}",
 	"Return-path: {$email}",
 	"MIME-Version: 1.0",
