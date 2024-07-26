@@ -7,15 +7,16 @@ nav.append(menu);
 
 
 function createMenu(menuItems) {
-    const UL = document.createElement('ul');
+    const DIV = document.createElement('div');
+    DIV.setAttribute("id","nav-links")
 
     for(const itemName of menuItems){
-        let li = document.createElement('li');
-            li.append(createURL(itemName));
-        UL.append(li);
+        let span = document.createElement('span');
+            span.append(createURL(itemName));
+        DIV.append(span);
     }
 
-    return UL;
+    return DIV;
 }
 
 function createURL(itemName){

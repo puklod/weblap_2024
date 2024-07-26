@@ -11,18 +11,38 @@ const gallery = {
     delay: 5000,
 };
 
+preload();
 addEventListeners(gallery.imgElement);
 autoPlay();
 
+function preload() {
+    let body = document.querySelector('body');
+    let preloadDiv = document.createElement('div');
+        preloadDiv.setAttribute("id","gallery-preload");
+        
+    body.append(preloadDiv);
 
-function addEventListeners(imgElemnet) {
-    gallery.imgElement.addEventListener('mouseover',() => {
+    for(let i=0; i<gallery.size; i++) {
+        let img = document.createElement('img');
+            img.setAttribute("src",generateImgFilePath(i+1));
+            img.setAttribute("width","1px");
+            img.setAttribute("height","1px");
+        
+        preloadDiv.append(img);
+    }
+
+    preloadDiv.remove();
+}
+
+
+function addEventListeners(imgElement) {
+    imgElement.addEventListener('mouseover',() => {
         isMouseOver = true;
         gallery.leftArrow.style.opacity = "0.6";
         gallery.rightArrow.style.opacity = "0.6";
     });
     
-    gallery.imgElement.addEventListener('mouseleave',() => {
+    imgElement.addEventListener('mouseleave',() => {
         isMouseOver = false;
         gallery.leftArrow.style.opacity = "0";
         gallery.rightArrow.style.opacity = "0";

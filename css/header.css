@@ -41,7 +41,7 @@ nav {
 }
 
 nav > #site-name,
-nav > ul {
+nav > #nav-links {
     user-select: none;
     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
@@ -144,26 +144,21 @@ header.small > nav > #site-name > .side-icon {
     padding: 2vw;
 }
 
-header.small > nav > ul {
-    margin:0;
-    padding:0;
+header.small > nav > #nav-links {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 100%;
 }
 
 
-header.small > nav > ul > li {
-    list-style: none;
-    padding-top: 2vw;
+header.small > nav > #nav-links > span {
+    padding-top: 0.4rem;;
 }
 
 
-header.small > nav > ul > li > a {
+header.small > nav > #nav-links > span > a {
     color:#a77d14;
     display: block;
-    text-decoration: none;
     font-size: 1.4em;
     font-weight: bold;
     font-family: 'Alegreya SC', serif;
@@ -200,28 +195,23 @@ header.big > nav > #site-name > .side-icon {
     padding: 11px;
 }
 
-header.big > nav > ul {
+header.big > nav > #nav-links {
     grid-column: middle;
-    width: 100%;
     grid-row: bottom;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
 }
 
-header.big > nav > ul > li {
+header.big > nav > #nav-links > span {
     list-style: none;
-    padding-left: 20px;
-    padding-right: 20px;
-
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
 }
 
 
-header.big > nav > ul > li > a {
+header.big > nav > #nav-links > span > a {
     color:#7f7055;
     display: block;
-    text-decoration: none;
     font-size: 30px;
     font-weight: bold;
     font-family: 'Alegreya SC', serif;
@@ -230,7 +220,7 @@ header.big > nav > ul > li > a {
     transition-property: color;
 }
 
-header.big > nav > ul > li > a:hover {
+header.big > nav > #nav-links > span > a:hover {
     color:#b9a889;
 }
 
@@ -253,25 +243,21 @@ header.big > nav > ul > li > a:hover {
     }
 
     header.small > nav > #site-name {
-        font-size: 2.2em;
+        font-size: 2.5em;
     }
 
-    header.small > nav > ul > li > a {
+    header.small > nav > #nav-links > span > a {
         font-size: 1.7em;
     }
 
 }
 
 @media (min-width: 580px) {
-    header.small > nav > ul > li > a {
-        font-size: 2em;
-    }
-
     header.small > nav > #site-name {
         font-size: 2.8em;
     }
 
-    header.small > nav > ul > li > a {
+    header.small > nav > #nav-links > span > a {
         font-size: 2.2em;
     }
 
@@ -317,7 +303,7 @@ header.big > nav > ul > li > a:hover {
     }
 
     header.big > nav > #site-name {
-        font-size: 4em;
+        font-size: 3.6em;
     }
 
     header.big > nav > #site-name > .side-icon {
@@ -325,8 +311,8 @@ header.big > nav > ul > li > a:hover {
         padding: 1.3vw;
     }
 
-    header.big > nav > ul > li > a {
-        font-size: 1.8em;
+    header.big > nav > #nav-links > span > a {
+        font-size: 1.4em;
     }
 }
 
@@ -350,7 +336,7 @@ header.big > nav > ul > li > a:hover {
         padding: 1vw;
     }
 
-    header.big > nav > ul > li > a {
+    header.big > nav > #nav-links > span > a {
         font-size: 1.8em;
     }
 }
@@ -373,7 +359,7 @@ header.big > nav > ul > li > a:hover {
         padding: 1vw;
     }
 
-    header.big > nav > ul > li > a {
+    header.big > nav > #nav-links > span > a {
         font-size: 2em;
     }
 }
@@ -399,7 +385,7 @@ header.big > nav > ul > li > a:hover {
         padding: 0.9vw;
     }
 
-    header.big > nav > ul > li > a {
+    header.big > nav > #nav-links > span > a {
         font-size: 2.2em;
     }
 }
@@ -423,7 +409,7 @@ header.big > nav > ul > li > a:hover {
         padding: 0.7vw;
     }
 
-    header.big > nav > ul > li > a {
+    header.big > nav > #nav-links > span > a {
         font-size: 2.1em;
     }
 }
@@ -458,7 +444,7 @@ header.big > nav > ul > li > a:hover {
         padding: 0.5vw;
     }
 
-    header.big > nav > ul > li > a {
+    header.big > nav > #nav-links > span > a {
         font-size: 2.2em;
     }
 }

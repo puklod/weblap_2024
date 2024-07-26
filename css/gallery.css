@@ -1,3 +1,8 @@
+#gallery-preload {
+    position: fixed;
+    visibility: hidden;
+}
+
 #vehicles {
     color: black;
     display: flex;
@@ -11,10 +16,11 @@
     flex-wrap: wrap;
     place-content: center space-between;
     background-size: cover !important;
+    background-repeat: no-repeat;
     transition-property: background-image;
     transition-duration: 300ms;
     transition-timing-function: ease-in-out;
-    transition-delay: 60ms;
+    transition-delay: 100ms;
     border-style: solid;
     border-width: 0.2vw;
     border-color:#4b463e;
